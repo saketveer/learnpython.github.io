@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>{{title}}</title
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body style="height:3000px">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Learn Python</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+        <!-- for python menu -->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Select
+       </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'pythonintroduction' %}">Python Introduction</a>
+          <a class="dropdown-item" href="{% url 'pythongettingstarted' %}">Python Getting Started</a>
+          <a class="dropdown-item" href="{% url 'pythonsyntax' %}">Python Syntax & Comment</a>
+          <a class="dropdown-item" href="{% url 'pythonvariable' %}">Python Variables</a>
+          <a class="dropdown-item" href="{% url 'pythondatatype' %}">Python Data Types</a>
+          <a class="dropdown-item" href="{% url 'pythonnumbers' %}">Python Numbers</a>
+          <a class="dropdown-item" href="{% url 'pythoncasting' %}">Python Casting</a>
+          <a class="dropdown-item" href="{% url 'pythonoperators' %}">Python Operators</a>
+          <a class="dropdown-item" href="{% url 'pythonlists' %}">Python Lists</a>
+          <a class="dropdown-item" href="{% url 'pythontuples' %}">Python Tuples</a>
+          <a class="dropdown-item" href="{% url 'pythonsets' %}">Python Sets</a>
+          <a class="dropdown-item" href="{% url 'pythondictionary' %}">Python Dictionaries</a>
+          <a class="dropdown-item" href="{% url 'pythonarray' %}">Python Arrays</a>
+
+
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Funtion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="{% url 'pythonuserinput' %}">Python User Input</a>
+         <a class="dropdown-item" href="{% url 'pythonifelse' %}">Python If...else</a>
+         <a class="dropdown-item" href="{% url 'pythonwhileloops' %}">Python While Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonforloops' %}">Python For Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonfunctions' %}">Python Functions</a>
+         <a class="dropdown-item" href="{% url 'pythonclassobjects' %}">Python Class & Objects</a>
+        </div>
+      </li>
+
+
+        <!-- for python menu end -->
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">Signup<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- navbar area closed here -->
+<!-- columns start -->
+<p>
+    <br>
+    <br>
+    <p>&nbsp;&nbsp;
+     <!---     Amazone Add Start -->
+   <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = '420022-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+    <!-- Amazone Add End -->
+    </p>
+</p>
+<div class="container-fluid">
+   <div class="container-fluid">
+       <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row">
+      <div class="col-sm-7" style="background-color:white;">
+  <!-- Python Class/Object Theory Start -->
+          <p><h2><strong>Python Class/Object</strong></h2></p>
+            <p><strong>Classes / Objects</strong><br />Python is an object oriented programming language. Almost everything is an object in python, with its properties and methods. A Class is like an object constructor, or a "blueprint" for creating objects.</p>
+<p><strong>Create a Class.</strong><br />The keyword <strong><span style="color: #3366ff;">class</span></strong> is used to create a class:<br /><span style="color: #3366ff;">class</span> Car_Class:<br />x = 10        <span style="color: #ff0000;"># here Car_Class, with a property named x:</span><br /><span style="color: #3366ff;">print</span>(Car_Class)</p>
+<p><strong>Create an Object.</strong><br />We can use the class name Car_Class to create objects named obj1, and print the value of x:<br /><span style="color: #3366ff;">class</span> Car_Class:<br />x = 10<br />obj1 = Car_Class()<br /><span style="color: #3366ff;">print</span>(obj1.x)</p>
+<p><strong>The __init__() Function.</strong><br />All classes have a function called the built-in __init__(), which is always executed when the class is being initiated.<br />Create a class named Student, use the __init__() function to assign values for name and age.<br /><span style="color: #3366ff;">class</span> Student:<br /><span style="color: #3366ff;">def</span> __init__(self, name, age):<br />self.<span style="color: #ff0000;">name</span> = name<br />self.<span style="color: #ff0000;">age</span> = age<br />obj1 = Student("Saket", 36)<br /><span style="color: #3366ff;">print</span>(obj1.<span style="color: #ff0000;">name</span>)<br /><span style="color: #3366ff;">print</span>(obj1.<span style="color: #ff0000;">age</span>)<br /><span style="color: #ff0000;"># The __init__() function is called automatically every time the class is being used to create a new object.</span></p>
+<p><strong>Object Methods.</strong><br />Methods in objects are functions that belong to the object.<br /><span style="color: #3366ff;">class</span> Student:<br /><span style="color: #3366ff;">def</span> __init__(self, name, age):<br />self.<span style="color: #ff0000;">name</span> = name<br />self.<span style="color: #ff0000;">age</span> = age<br /><span style="color: #3366ff;">def</span> method_func(self):<br /><span style="color: #3366ff;">print</span>("Hi my name is " + self.<span style="color: #ff0000;">name</span>,"and age is ", self.<span style="color: #ff0000;">age</span>)<br />obj1 = Student("Saket", 36)<br />obj1.method_func()</p>
+<p><strong>The self Parameter.</strong><br />It is a reference to the current instance of the class, and is used to access variables that belongs to the class. We can use another name instead of self, it has to be the first parameter of any function in the class.<br /><span style="color: #3366ff;">class</span> Student:<br /><span style="color: #3366ff;">def</span> __init__(myobject, name, age):<br />myobject.<span style="color: #ff0000;">name</span> = name<br />myobject.<span style="color: #ff0000;">age</span> = age<br /><span style="color: #3366ff;">def</span> method_func(pqr):<br /><span style="color: #3366ff;">print</span>("Hi my name is " + pqr.<span style="color: #ff0000;">name</span>,"and age is ", pqr.<span style="color: #ff0000;">age</span>)<br />obj1 = Student("Saket", 36)<br />obj1.method_func()</p>
+<p><strong>Modify Object Properties.</strong><br /><span style="color: #3366ff;">class</span> Student:<br /><span style="color: #3366ff;">def</span> __init__(self, name, age):<br />self.<span style="color: #ff0000;">name</span> = name<br />self.<span style="color: #ff0000;">age</span> = age<br /><span style="color: #3366ff;">def</span> method_func(self):<br /><span style="color: #3366ff;">print</span>("Hi my name is " + self.<span style="color: #ff0000;">name</span>,"and age is ", self.<span style="color: #ff0000;">age</span>)<br />obj1 = Student("Saket", 36)<br />obj1.<span style="color: #ff0000;">age</span> = 42         <span style="color: #ff0000;"> # update the age</span><br />obj1.method_func()</p>
+<p><strong>Delete Object Properties.</strong><br />We can delete properties of an objects and an object also, by using the del keyword.<br /><span style="color: #3366ff;">del</span> obj1.age       <span style="color: #ff0000;"># delete the properties (age) of an object.</span><br /><span style="color: #3366ff;">del</span> obj1              <span style="color: #ff0000;"># Delete the obj1 object.</span></p>
+<p><span style="color: #3366ff;">class</span> Student:<br /><span style="color: #3366ff;">def</span> __init__(self, name, age):<br /><span style="color: #3366ff;">self</span>.<span style="color: #ff0000;">name</span> = name<br />self.age = age<br /><span style="color: #3366ff;">def</span> method_func(self):<br /><span style="color: #3366ff;">print</span>("Hi my name is " + self.<span style="color: #ff0000;">name</span>,"and age is ", self.<span style="color: #ff0000;">age</span>)<br />obj1 = Student("Saket", 36)<br />obj1.method_func()<br />del obj1.<span style="color: #ff0000;">age</span><br /><span style="color: #3366ff;">print</span>(obj1.age)        <span style="color: #ff0000;"> # AttributeError: 'Student' object has no attribute 'age'.</span></p>
+<p><strong>Delete an object.</strong><br /><span style="color: #3366ff;">class</span> Student:<br /><span style="color: #3366ff;">def</span> __init__(self, name, age):<br />self.<span style="color: #ff0000;">name</span> = name<br />self.<span style="color: #ff0000;">age</span> = age<br />def method_func(self):<br /><span style="color: #3366ff;">print</span>("Hi my name is " + self.<span style="color: #ff0000;">name</span>,"and age is ", self.<span style="color: #ff0000;">age</span>)<br />obj1 = Student("Saket", 36)<br />obj1.method_func()<br /><span style="color: #3366ff;">del</span> obj1<br /><span style="color: #3366ff;">print</span>(obj1.<span style="color: #ff0000;">age</span>) # NameError: name 'obj1' is not defined.</p>
+<p><strong>The pass Statement.</strong><br />class definitions cannot be empty, but for some reason the class definition with no content,<br /><span style="color: #3366ff;">class</span> Student:<br /><span style="color: #3366ff;">pass</span>              <span style="color: #ff0000;">  # put in the pass statement to avoid an error.</span></p>
+
+
+  <!-- Python Class/Object Theory End -->
+    </div>
+ <!-- Second Column is for Google Adds -->
+<div class="col-sm-5" style="background-color:grey;">
+    <div class="container">
+        <!-- new -->
+    <h1>Google Adds Here Pasted</h1>
+    <!-- new end -->
+
+    </div>
+<!-- Second Column is End- for Google Adds -->
+</div>
+    </div>
+<br>
+</div>
+</div>
+<!-- above script are same for all pages. -->
+ <br>
+<br>
+
+
+</body>
+</html>

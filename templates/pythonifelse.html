@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>{{title}}</title
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body style="height:3000px">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Learn Python</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+        <!-- for python menu -->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Select
+       </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'pythonintroduction' %}">Python Introduction</a>
+          <a class="dropdown-item" href="{% url 'pythongettingstarted' %}">Python Getting Started</a>
+          <a class="dropdown-item" href="{% url 'pythonsyntax' %}">Python Syntax & Comment</a>
+          <a class="dropdown-item" href="{% url 'pythonvariable' %}">Python Variables</a>
+          <a class="dropdown-item" href="{% url 'pythondatatype' %}">Python Data Types</a>
+          <a class="dropdown-item" href="{% url 'pythonnumbers' %}">Python Numbers</a>
+          <a class="dropdown-item" href="{% url 'pythoncasting' %}">Python Casting</a>
+          <a class="dropdown-item" href="{% url 'pythonoperators' %}">Python Operators</a>
+          <a class="dropdown-item" href="{% url 'pythonlists' %}">Python Lists</a>
+          <a class="dropdown-item" href="{% url 'pythontuples' %}">Python Tuples</a>
+          <a class="dropdown-item" href="{% url 'pythonsets' %}">Python Sets</a>
+          <a class="dropdown-item" href="{% url 'pythondictionary' %}">Python Dictionaries</a>
+          <a class="dropdown-item" href="{% url 'pythonarray' %}">Python Arrays</a>
+
+
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Funtion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="{% url 'pythonuserinput' %}">Python User Input</a>
+         <a class="dropdown-item" href="{% url 'pythonifelse' %}">Python If...else</a>
+         <a class="dropdown-item" href="{% url 'pythonwhileloops' %}">Python While Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonforloops' %}">Python For Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonfunctions' %}">Python Functions</a>
+         <a class="dropdown-item" href="{% url 'pythonclassobjects' %}">Python Class & Objects</a>
+        </div>
+      </li>
+
+
+        <!-- for python menu end -->
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">Signup<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- navbar area closed here -->
+<!-- columns start -->
+<p>
+    <br>
+    <br>
+    <p>&nbsp;&nbsp;
+     <!---     Amazone Add Start -->
+   <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = '420022-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+    <!-- Amazone Add End -->
+    </p>
+</p>
+<div class="container-fluid">
+   <div class="container-fluid">
+       <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row">
+      <div class="col-sm-7" style="background-color:white;">
+  <!-- Python If..... Theory Else Start -->
+        <p><h2><strong>Python If Else</strong></h2></p>
+          <p>Python supports the usual<strong> logical conditions</strong> from mathematics:<br /><span style="color: #800000;">• Greater than: a &gt; b</span><br /><span style="color: #800000;">• Less than: a &lt; b</span><br /><span style="color: #800000;">• Greater than or equal to: a &gt;= b</span><br /><span style="color: #800000;">• Less than or equal to: a &lt;= b</span><br /><span style="color: #800000;">• Equals: a == b</span><br /><span style="color: #800000;">• Not Equals: a != b</span><br />These conditions can be used commonly in <strong>"if statements"</strong> and <strong>loops.</strong></p>
+<p>An <strong><span style="color: #3366ff;">if</span> </strong>statement is written by using the <span style="color: #3366ff;"><strong>''if''</strong> </span>keyword.<br />p = 50              <span style="color: #ff0000;"># p is a integer</span><br />q = 100          <span style="color: #ff0000;"> # q is a integer</span><br /><span style="color: #3366ff;">if</span> q &gt; p:<br /><span style="color: #3366ff;"> print</span>("q is greater than p")</p>
+<p><strong>Indentation</strong><br />Python relies on indentation (whitespace at the beginning of a line) to define scope in the code.</p>
+<p><strong>Elif</strong><br />The <strong><span style="color: #3366ff;">elif</span> </strong>keyword is used when if the previous conditions were not true.<br />p = 100<br />q = 50<br /><span style="color: #3366ff;">if</span> q &gt; p:<br /><span style="color: #3366ff;"> print</span>("q is greater than p")<br /><span style="color: #3366ff;">elif</span> p &gt; q:<br /><span style="color: #3366ff;"> print</span>("p is greater than q")</p>
+<p><strong>Else</strong><br />The <strong><span style="color: #3366ff;">else</span> </strong>keyword catches anything which isn't caught by the preceding conditions.<br />p = 100<br />q = 50<br /><span style="color: #3366ff;">if</span> q &gt; p:<br /><span style="color: #3366ff;"> print</span>("q is greater than p")<br />elif p == q:<br /><span style="color: #3366ff;"> print</span>("p and q is equal")<br /><span style="color: #3366ff;">else:</span><br /><span style="color: #3366ff;"> print</span>("p is greater than q") # because if &amp; elif condition false, else will be execute.</p>
+<p>The <strong><span style="color: #3366ff;">else</span> </strong>can be used without the <span style="color: #3366ff;"><strong>elif:</strong></span><br />p = 100<br />q = 50<br />if q &gt; p:<br /><span style="color: #3366ff;"> print</span>("q is greater than p")<br /><span style="color: #3366ff;">else:</span><br /><span style="color: #3366ff;"> print</span>("p is greater than q")</p>
+<p><strong>Short Hand If &amp; Else</strong><br />Only one statement to execute, we can put it on the same line as the if statement.</p>
+<p><span style="font-size: inherit;">p = 100<br />q = 10<br /><span style="color: #3366ff;">if</span> p &gt; q: <span style="color: #3366ff;">print</span>("p is greater than q")             <span style="color: #ff0000;"># example 1</span><br /><span style="color: #3366ff;">print</span>("Good") <span style="color: #3366ff;">if</span> p &gt; q <span style="color: #3366ff;">else</span> <span style="color: #3366ff;">print</span>("Bad")      <span style="color: #ff0000;"># example 2</span></span></p>
+<p><span style="font-size: inherit;"><br />This is known as </span><strong style="font-size: inherit;">Ternary Operators, or Conditional Expressions.</strong></p>
+<p>p = 20<br />q = 20<br /><span style="color: #3366ff;">print</span>("p is grater") <span style="color: #3366ff;">if</span> p &gt; q <span style="color: #3366ff;">else</span> <span style="color: #3366ff;">print</span>("=") if p == q else <span style="color: #3366ff;">print</span>("q is grater")</p>
+<p><strong>And / ( And Gate)</strong><br />The<span style="color: #3366ff;"><strong> "and"</strong></span> keyword is a logical operator, and it only care that both conditions are true.<br />p = 100<br />q = 30<br />r = 200<br /><span style="color: #3366ff;">if</span> p &gt; q <span style="color: #3366ff;">and</span> r &gt; p:<br /><span style="color: #3366ff;">print</span>("Both conditions are True")</p>
+<p><strong>Or / (Or Gate)</strong><br />The <strong><span style="color: #3366ff;">"or"</span></strong> keyword is a logical operator, and it only care that at least one condition is true.<br />p = 100<br />q = 30<br />r = 200<br />if p &gt; q or p &gt; r:<br /><span style="color: #3366ff;">print</span>("Only one condition is True")</p>
+<p><strong>Nested If</strong><br />The <span style="color: #3366ff;"><strong>"if"</strong></span> statements inside another <strong><span style="color: #3366ff;">"if"</span></strong> statements, it is called <span style="color: #3366ff;"><strong>"nested if"</strong> </span>statements.<br />p = 200<br />if p &gt; 60:<br /><span style="color: #3366ff;">print</span>("p is greater than 60,")<br /><span style="color: #3366ff;">if</span> p &gt; 150:<br /><span style="color: #3366ff;">print</span>("as well as greater than 150!")<br /><span style="color: #3366ff;">else:</span><br /><span style="color: #3366ff;">print</span>("but p is less than 150!")<br /><span style="color: #3366ff;">else:</span><br /><span style="color: #3366ff;">print</span>("p is less than 60 &amp; 150!")</p>
+<p><strong>The pass Statement</strong><br />For some reason has<strong><span style="color: #3366ff;"> "if"</span></strong> statement with no content, put in the <strong><span style="color: #3366ff;">"pass"</span> </strong>statement to avoid getting an error.<br />p = 100<br />q = 200</p>
+<p><span style="color: #3366ff;">if</span> p &gt; q:<br /><span style="color: #3366ff;">pass</span>      <span style="color: #ff0000;"># because no content.</span></p>
+
+
+
+
+
+
+  <!-- Python If Else... Theory End -->
+    </div>
+ <!-- Second Column is for Google Adds -->
+<div class="col-sm-5" style="background-color:grey;">
+    <div class="container">
+        <!-- new -->
+    <h1>Google Adds Here Pasted</h1>
+    <!-- new end -->
+
+    </div>
+<!-- Second Column is End- for Google Adds -->
+</div>
+    </div>
+<br>
+</div>
+</div>
+<!-- above script are same for all pages. -->
+ <br>
+<br>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

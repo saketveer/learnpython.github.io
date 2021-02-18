@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>{{title}}</title
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body style="height:3000px">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Learn Python</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+        <!-- for python menu -->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Select
+       </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'pythonintroduction' %}">Python Introduction</a>
+          <a class="dropdown-item" href="{% url 'pythongettingstarted' %}">Python Getting Started</a>
+          <a class="dropdown-item" href="{% url 'pythonsyntax' %}">Python Syntax & Comment</a>
+          <a class="dropdown-item" href="{% url 'pythonvariable' %}">Python Variables</a>
+          <a class="dropdown-item" href="{% url 'pythondatatype' %}">Python Data Types</a>
+          <a class="dropdown-item" href="{% url 'pythonnumbers' %}">Python Numbers</a>
+          <a class="dropdown-item" href="{% url 'pythoncasting' %}">Python Casting</a>
+          <a class="dropdown-item" href="{% url 'pythonoperators' %}">Python Operators</a>
+          <a class="dropdown-item" href="{% url 'pythonlists' %}">Python Lists</a>
+          <a class="dropdown-item" href="{% url 'pythontuples' %}">Python Tuples</a>
+          <a class="dropdown-item" href="{% url 'pythonsets' %}">Python Sets</a>
+          <a class="dropdown-item" href="{% url 'pythondictionary' %}">Python Dictionaries</a>
+          <a class="dropdown-item" href="{% url 'pythonarray' %}">Python Arrays</a>
+
+
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Funtion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="{% url 'pythonuserinput' %}">Python User Input</a>
+         <a class="dropdown-item" href="{% url 'pythonifelse' %}">Python If...else</a>
+         <a class="dropdown-item" href="{% url 'pythonwhileloops' %}">Python While Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonforloops' %}">Python For Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonfunctions' %}">Python Functions</a>
+         <a class="dropdown-item" href="{% url 'pythonclassobjects' %}">Python Class & Objects</a>
+        </div>
+      </li>
+
+
+        <!-- for python menu end -->
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">Signup<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- navbar area closed here -->
+<!-- columns start -->
+<p>
+    <br>
+    <br>
+    <p>&nbsp;&nbsp;
+     <!---     Amazone Add Start -->
+   <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = '420022-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+    <!-- Amazone Add End -->
+    </p>
+</p>
+<div class="container-fluid">
+   <div class="container-fluid">
+       <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row">
+      <div class="col-sm-7" style="background-color:white;">
+  <!-- Python For Loop Theory Start -->
+          <p><h2><strong>For Loop</strong></h2></p>
+          <p><strong>For Loops.</strong><br />A<strong> for</strong> loop is used for repetition, over a sequence it is either a list, a tuple, a dictionary, a set, or a string.<br />Fruits_list = ["apple", "banana", "mango", "guava"]<br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> fruits_list:<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p><strong>Looping Through a string or word.</strong><br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> "Biology":<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p><strong>The break statement with for loop.</strong><br />Fruits_list = ["apple", "banana", "mango", "guava"]<br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> fruits_list:<br /><span style="color: #3366ff;">print</span>(x)<br /><span style="color: #3366ff;">if</span> x == "mango":<br /><span style="color: #3366ff;">break</span></p>
+<p><strong>The continue statement with the for loop.</strong><br />Fruits_list = ["apple", "banana", "mango", "guava"]<br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> fruits_list:<br /><span style="color: #3366ff;">if</span> x == "mango":<br /><span style="color: #3366ff;">continue</span><br /><span style="color: #3366ff;">print</span>(x)</p>
+<p><strong>The range() Function.</strong><br />The <strong><span style="color: #3366ff;">range()</span></strong> function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.<br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> <span style="color: #3366ff;">range</span>(10):<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p><strong>Note:</strong> that range(10) is not the values of 0 to 10, but the values 0 to 9.<br />The range() function defaults to 0 as a starting value, however it is possible to specify the starting value by adding a parameter:<strong> range(6, 12),</strong> which means values from 6 to 12 (but not including 12):</p>
+<p><strong>Using the start parameter:</strong><br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> <span style="color: #3366ff;">range</span>(6, 12):<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> <span style="color: #3366ff;">range</span>(4, 36, 2):<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p><strong>Else in For Loop.</strong><br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> <span style="color: #3366ff;">range</span>(8):<br /><span style="color: #3366ff;">print</span>(x)<br /><span style="color: #3366ff;">else:</span><br /><span style="color: #3366ff;">print</span>("finished!")</p>
+<p><strong>Note:</strong> The <strong>else block</strong> will NOT be executed if the loop is stopped by a break statement.</p>
+<p><strong>Break the loop when x is 4, and see what happens with the else block:</strong><br /><span style="color: #3366ff;">for</span> x<span style="color: #3366ff;"> in range</span>(8):<br /><span style="color: #3366ff;">if</span> x == 4: <span style="color: #3366ff;">break</span><br /><span style="color: #3366ff;">print</span>(x)<br /><span style="color: #3366ff;">else:</span><br /><span style="color: #3366ff;">print</span>("finished!")</p>
+<p><strong>Nested Loops.</strong><br />A nested loop is a loop inside a loop. The "inner loop" will be executed one time for each iteration of the "outer loop":</p>
+<p><span style="color: #ff0000;">#Print each adjective for every fruit:</span><br />adjective = ["red", "yellow", "tasty"]<br />fruits = ["apple", "banana", "mango"]</p>
+<p><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> adjective:<br /><span style="color: #3366ff;">for</span> y <span style="color: #3366ff;">in</span> fruits:<br /><span style="color: #3366ff;">print</span>(x, y)</p>
+<p><strong>The pass Statement.</strong><br />For some reason has <strong>"for loop"</strong> statement with no content, put in the <span style="color: #3366ff;"><strong>"pass"</strong> </span>statement to avoid getting an error.<br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> [0, 1, 2]:<br /><span style="color: #3366ff;">pass</span></p>
+
+  <!-- Python For Loop Theory End -->
+    </div>
+ <!-- Second Column is for Google Adds -->
+<div class="col-sm-5" style="background-color:grey;">
+    <div class="container">
+        <!-- new -->
+    <h1>Google Adds Here Pasted</h1>
+    <!-- new end -->
+
+    </div>
+<!-- Second Column is End- for Google Adds -->
+</div>
+    </div>
+<br>
+</div>
+</div>
+<!-- above script are same for all pages. -->
+ <br>
+<br>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

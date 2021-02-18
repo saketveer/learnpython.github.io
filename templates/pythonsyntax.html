@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>{{title}}</title
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body style="height:3000px">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Learn Python</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+        <!-- for python menu -->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Select
+       </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'pythonintroduction' %}">Python Introduction</a>
+          <a class="dropdown-item" href="{% url 'pythongettingstarted' %}">Python Getting Started</a>
+          <a class="dropdown-item" href="{% url 'pythonsyntax' %}">Python Syntax & Comment</a>
+          <a class="dropdown-item" href="{% url 'pythonvariable' %}">Python Variables</a>
+          <a class="dropdown-item" href="{% url 'pythondatatype' %}">Python Data Types</a>
+          <a class="dropdown-item" href="{% url 'pythonnumbers' %}">Python Numbers</a>
+          <a class="dropdown-item" href="{% url 'pythoncasting' %}">Python Casting</a>
+          <a class="dropdown-item" href="{% url 'pythonoperators' %}">Python Operators</a>
+          <a class="dropdown-item" href="{% url 'pythonlists' %}">Python Lists</a>
+          <a class="dropdown-item" href="{% url 'pythontuples' %}">Python Tuples</a>
+          <a class="dropdown-item" href="{% url 'pythonsets' %}">Python Sets</a>
+          <a class="dropdown-item" href="{% url 'pythondictionary' %}">Python Dictionaries</a>
+          <a class="dropdown-item" href="{% url 'pythonarray' %}">Python Arrays</a>
+
+
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Funtion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="{% url 'pythonuserinput' %}">Python User Input</a>
+         <a class="dropdown-item" href="{% url 'pythonifelse' %}">Python If...else</a>
+         <a class="dropdown-item" href="{% url 'pythonwhileloops' %}">Python While Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonforloops' %}">Python For Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonfunctions' %}">Python Functions</a>
+         <a class="dropdown-item" href="{% url 'pythonclassobjects' %}">Python Class & Objects</a>
+        </div>
+      </li>
+
+
+        <!-- for python menu end -->
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">Signup<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- navbar area closed here -->
+<!-- columns start -->
+<p>
+    <br>
+    <br>
+    <p>&nbsp;&nbsp;
+     <!---     Amazone Add Start -->
+   <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = '420022-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+    <!-- Amazone Add End -->
+    </p>
+</p>
+<div class="container-fluid">
+   <div class="container-fluid">
+       <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row">
+      <div class="col-sm-7" style="background-color:white;">
+  <!-- Python Syntax Theory Start -->
+     <p><h2><strong>Python Syntax & Comments</h2></strong></p>
+  <style="mso-margin-top-alt: auto; text-align: justify;"><strong>Execution of Python Syntax</strong>
+<p><span style="color: #000000;">As we know, Python syntax can be executed by writing directly in the Command Line:</span></p>
+<p><span style="color: #000000;">&gt;&gt;&gt; <span style="color: #0000ff;">print</span>("Hello, India!")</span><br /><span style="color: #000000;">Hello, India!</span></p>
+<p><span style="color: #000000;">Or in the Command line by creating a python file on the server, helloindia is the file name with extension .py and run it.</span></p>
+<p><span style="color: #000000;">C:\users\saket\python helloindia.py</span></p></p>
+          <!-- Advertise here -->
+          <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = '420022-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+            <!-- Advertise End here -->
+
+              <style="mso-margin-top-alt: auto; text-align: justify;"><strong>Python Indentation</strong>
+<p>Spaces at the beginning of a code line is called indentation.</p>
+<p>The indentation in Python is very important.</p>
+<p>In Python indentation is used to indicate a block of code.</p>
+<p>e.g.</p>
+<p>if 10 &gt; 4:<br /><span style="color: #0000ff;">  print</span>("ten is greater than four")</p>
+<p>It will give an error <strong>if</strong> we do not provide the indentation:</p>
+<p>e.g.</p>
+<p>if 10 &gt; 4:<br /><span style="color: #0000ff;">print</span>("ten is greater than four")</p>
+<p>It will give an error because we have not provided the indentation:</p>
+
+          <p>e.g.</p>
+<p>if 10 &gt; 4:<br /><span style="color: #0000ff;"> print</span>("ten is greater than four") <br />if 10 &gt; 4:<br /><span style="color: #0000ff;">        print</span>(""ten is greater than four"") </p>
+<p>We can use spaces in the same block of code.</p>
+<p>e.g.</p>
+<p>if 10 &gt; 4:<br /><span style="color: #0000ff;"> print</span>("ten is greater than four")<br /><span style="color: #0000ff;">        print</span>("ten is greater than four")</p>
+<p>Here python will give an error because number of spaces use in same block of code.</p>
+
+   <style="mso-margin-top-alt: auto; text-align: justify;"><strong>Python Variables</strong><br>
+There is no command or keyword to create a variable in python like others languages.
+When the value is assigned to a variables at the same time variable is created accordingly. </p>
+
+          <p>x = 10 # x is a integer type variable created. </p>
+          <p> y = "Hello, India!" # y is a string type variable created. </p>
+          <style="mso-margin-top-alt: auto; text-align: justify;"><strong>Comments</strong>
+          <p style="text-align:justify"> In any programming language comments are used to documentation purpose only. It describes what about the source code is going to be use. Comments start with a #, and Python will render the rest of the line. It explains the logic or a part of it used in the code. Comments are usually helpful to programmer maintaining or enhancing the code when we are no longer around to answer questions about it.
+              <p> (i) # Symbol is used to a single line comment</p>
+          <p><p>However, there is no concept of multiline comments in Python. But it can be achieved by the following ways.</p>
+<p style="text-align:justify">In Python if literals that are not assigned to a variable, we can add a multiline string using triple quotes in our code, and place your comment inside it:<br></p>
+
+"""
+here is a comment
+2nd line is written
+3rd line is written
+"""
+          <p> # here is a comment<br> # 2<sup>nd</sup> line is written<br> # 3rd line is written<br> </p>
+          <p>e.g    # here is single line comment. </p>
+</p>
+<p>
+<style="mso-margin-top-alt: auto; text-align: justify;"><strong>Multiline Strings</strong><br>
+We can assign a multiline string to a variable by using three quotes.<br>
+a =" ""  Hello India, Hello India, Hello India, Hello India,
+Hello India, Hello India, Hello India, Hello India, Hello India,
+Hello India, Hello India, Hello India, Hello India, . """ <br/>
+Or <br/>
+a = '''Hello India, Hello India, Hello India, Hello India,
+Hello India, Hello India, Hello India, Hello India, Hello India,
+Hello India, Hello India, Hello India, Hello India, .'''
+</>
+  <!-- Python Syntax Theory End -->
+    </div>
+ <!-- Second Column is for Google Adds -->
+<div class="col-sm-5" style="background-color:grey;">
+    <div class="container">
+        <!-- new -->
+    <h1>Google Adds Here Pasted</h1>
+    <!-- new end -->
+
+    </div>
+<!-- Second Column is End- for Google Adds -->
+</div>
+    </div>
+<br>
+</div>
+</div>
+<!-- above script are same for all pages. -->
+ <br>
+<br>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>{{title}}</title
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body style="height:3000px">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Learn Python</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+        <!-- for python menu -->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Select
+       </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'pythonintroduction' %}">Python Introduction</a>
+          <a class="dropdown-item" href="{% url 'pythongettingstarted' %}">Python Getting Started</a>
+          <a class="dropdown-item" href="{% url 'pythonsyntax' %}">Python Syntax & Comment</a>
+          <a class="dropdown-item" href="{% url 'pythonvariable' %}">Python Variables</a>
+          <a class="dropdown-item" href="{% url 'pythondatatype' %}">Python Data Types</a>
+          <a class="dropdown-item" href="{% url 'pythonnumbers' %}">Python Numbers</a>
+          <a class="dropdown-item" href="{% url 'pythoncasting' %}">Python Casting</a>
+          <a class="dropdown-item" href="{% url 'pythonoperators' %}">Python Operators</a>
+          <a class="dropdown-item" href="{% url 'pythonlists' %}">Python Lists</a>
+          <a class="dropdown-item" href="{% url 'pythontuples' %}">Python Tuples</a>
+          <a class="dropdown-item" href="{% url 'pythonsets' %}">Python Sets</a>
+          <a class="dropdown-item" href="{% url 'pythondictionary' %}">Python Dictionaries</a>
+          <a class="dropdown-item" href="{% url 'pythonarray' %}">Python Arrays</a>
+
+
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Funtion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="{% url 'pythonuserinput' %}">Python User Input</a>
+         <a class="dropdown-item" href="{% url 'pythonifelse' %}">Python If...else</a>
+         <a class="dropdown-item" href="{% url 'pythonwhileloops' %}">Python While Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonforloops' %}">Python For Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonfunctions' %}">Python Functions</a>
+         <a class="dropdown-item" href="{% url 'pythonclassobjects' %}">Python Class & Objects</a>
+        </div>
+      </li>
+
+
+        <!-- for python menu end -->
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">Signup<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- navbar area closed here -->
+<!-- columns start -->
+<p>
+    <br>
+    <br>
+    <p>&nbsp;&nbsp;
+     <!---     Amazone Add Start -->
+   <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = '420022-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+    <!-- Amazone Add End -->
+    </p>
+</p>
+<div class="container-fluid">
+   <div class="container-fluid">
+       <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row">
+      <div class="col-sm-7" style="background-color:white;">
+  <!--Python Array Theory Start -->
+    <p><h2><strong>Python Array</strong></h2></p>
+            <p><strong>Arrays</strong> are used to store multiple values at a time in one single variable. Python does not have built-in support for Arrays, but Python Lists can be used instead.</p>
+<p><strong>Differences between List and an Array.</strong><br />A list is a different kind of data structure from an array. The biggest difference is in the idea of <strong>direct access vs. sequential</strong> access. <strong>Arrays allow both; direct and sequential access, while lists allow only sequential access.</strong> And this is because the way that these data structures are stored in memory. <strong>Sequential access</strong> must begin at the beginning and access each element in order, one after the other. <strong>Direct access</strong> allows the access of any element directly by locating it by its index number or address. Arrays and lists are both used in Python to store data, but they don't serve exactly the same purposes. They both can be used to store any data type (real numbers, strings, etc.), and they both can be indexed and iterated through, but the similarities between the two don't go much further. The main difference between a list and an array is the functions that we can perform to them. For example, we can divide an array by 3, and each number in the array will be divided by 3 and the result will be printed. If we try to divide a list by 3, Python will be thrown an error.</p>
+<p><strong>Create an array containing subject’s name.</strong><br />My_subject = ["Phy", "Chem", "Maths"]<br /><span style="color: #3366ff;">print</span>(type(My_subject))    <span style="color: #ff0000;"># result &lt;class 'list'&gt;</span><br /><span style="color: #3366ff;">print</span> (My_subject)            <span style="color: #ff0000;"> # result ['Phy', 'Chem', 'Maths']</span></p>
+<p><strong>Access the elements</strong> of an Array by referring to the index number.<br />My_subject = ["Phy", "Chem", "Maths"]<br />x = My_subject[0] # Get the value of the first array item:<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p><strong>Modify the value</strong> of the array item.<br />My_subject = ["Phy", "Chem", "Maths"]<br />My_subject[0] = "Biology"<br /><span style="color: #3366ff;">print</span>(My_subject)</p>
+<p>Use the<strong><span style="color: #3366ff;"> len()</span> </strong>method to return the length of an array or number of elements in an array.<br />My_subject = ["Phy", "Chem", "Maths","Biology"]<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">len</span>(My_subject))     <span style="color: #ff0000;"> # result 4, index-(0,1,2,3)</span></p>
+<p>The <strong>for in loop</strong> to access all the elements of an array.<br />My_subject = ["Phy", "Chem", "Maths","Biology"]<br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> My_subject:<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p>The <strong><span style="color: #3366ff;">append()</span> </strong>method to add an element to an array.<br />My_subject = ["Phy", "Chem", "Maths","Biology"]<br />My_subject.append("Geography")<br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> My_subject:<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p>The <strong><span style="color: #3366ff;">pop()</span></strong> and <strong><span style="color: #3366ff;">remove()</span></strong> method to remove an element from the array..<br />My_subject = ["Phy", "Chem", "Maths","Biology"]<br />My_subject.<span style="color: #3366ff;">pop</span>(0)                   <span style="color: #ff0000;"> # removed by index value.</span><br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> My_subject:<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p>The <strong><span style="color: #3366ff;">remove()</span> </strong>method to remove an ''specified element'' from the array.<br />My_subject = ["Phy", "Chem", "Maths","Biology"]<br />My_subject.<span style="color: #3366ff;">remove</span>("Maths")      <span style="color: #ff0000;"># remove by item value.</span><br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> My_subject:<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p>The<strong> <span style="color: #3366ff;">Reverse()</span></strong> method reverse the order of the an array or list.<br />fruits = ['apple', 'banana', 'cherry']<br />fruits.<span style="color: #3366ff;">reverse</span>()<br /><span style="color: #3366ff;">print</span>(fruits)</p>
+<p>The <strong><span style="color: #3366ff;">sort()</span> </strong>method sort the array or list alphabetically:<br />fruits = ['apple', 'mango', 'banana', 'cherry']<br />fruits.<span style="color: #3366ff;">sort</span>()<br /><span style="color: #3366ff;">print</span>(fruits)</p>
+<p><b># small i is called signed integer while capital I unsigned integer</b></p>
+<p><span style="color: #3366ff;">from</span> array <span style="color: #3366ff;">import</span> *<br />vals= array('i',[1,2,3,4,5,6])<br /><span style="color: #3366ff;">print</span>(vals)      <span style="color: #ff0000;"># success, i</span></p>
+<p><span style="color: #3366ff;">from</span> array <span style="color: #3366ff;">import</span> *<br />vals= array('i',[1,2,3,-4,5,6])<br /><span style="color: #3366ff;">print</span>(vals)     <span style="color: #ff0000;"># success, i</span></p>
+<p><span style="color: #3366ff;">from</span> array <span style="color: #3366ff;">import</span> *<br />vals= array('I',[1,2,3,-4,5,6])<br /><span style="color: #3366ff;">print</span>(vals)      <span style="color: #ff0000;"># error, I</span></p>
+<p><span style="color: #3366ff;">from</span> array <span style="color: #3366ff;">import</span> *<br />vals= array('i',[1,2,3,-4,5,6])<br /><span style="color: #3366ff;">print</span>(vals)<br /><span style="color: #3366ff;">print</span>(vals.<span style="color: #3366ff;">buffer_info</span>())</p>
+<p><span style="color: #3366ff;">from</span> array <span style="color: #3366ff;">import</span> *<br />vals= array('i',[1,2,3,-4,5,6])<br /><span style="color: #3366ff;">print</span>(vals)<br /><span style="color: #3366ff;">print</span>(vals.<span style="color: #3366ff;">typecode</span>)</p>
+<p><span style="color: #3366ff;">from</span> array <span style="color: #3366ff;">import</span> *<br />vals= array('i',[1,2,3,-4,5,6])<br /><span style="color: #3366ff;">print</span>(vals)<br />vals.<span style="color: #3366ff;">reverse</span>()<br /><span style="color: #3366ff;">print</span>(vals)</p>
+<p><strong># Indexed accessing.</strong><br /><span style="color: #3366ff;">from</span> array <span style="color: #3366ff;">import</span> *<br />vals= array('i',[1,2,3,-4,5,6])<br /><span style="color: #3366ff;">print</span>(vals)<br /><span style="color: #3366ff;">print</span>(vals[5])</p>
+<p><strong>Loop in array</strong> fetch value one by one by indexed value<br /><span style="color: #3366ff;">from</span> array <span style="color: #3366ff;">import</span> *<br />vals= array('i',[1,2,3,-4,5,6])<br /><span style="color: #3366ff;">for</span> x in <span style="color: #3366ff;">range</span>(5):<br /><span style="color: #3366ff;">print</span>(vals[x])</p>
+<p><strong>Loop in array</strong> fetch value one by one by indexed value<br /><span style="color: #3366ff;">from</span> array <span style="color: #3366ff;">import</span> *<br />vals= array('i',[1,2,3,-4,5,6])<br /><span style="color: #3366ff;">for</span> x in <span style="color: #3366ff;">range</span>(len(vals)):<br /><span style="color: #3366ff;">print</span>(vals[x])</p>
+<p><strong>Loop in array</strong> fetch value one by one by indexed value<br /><span style="color: #3366ff;">from</span> array <span style="color: #3366ff;">import</span> *<br />vals= array('i',[1,2,3,-4,5,6])<br /><span style="color: #3366ff;">for</span> x in <span style="color: #3366ff;">range</span>(7-3):<br /><span style="color: #3366ff;">print</span>(vals[x])</p>
+<p><strong>Loop in array e fetch</strong> value one by one at the end<br /><span style="color: #3366ff;">from</span> array <span style="color: #3366ff;">import</span> *<br />vals= array('i',[1,2,3,-4,5,6])<br /><span style="color: #3366ff;">for</span> <span style="color: #3366ff;">e in</span> vals:<br /><span style="color: #3366ff;">print</span>(e)</p>
+<p><strong>Copy the array</strong> with newArray<br /><span style="color: #3366ff;">from</span> array <span style="color: #3366ff;">import</span> *<br />vals= array('i',[1,2,3,-4,5,6])<br />newArr=array(vals.<span style="color: #3366ff;">typecode</span>,(a for a in vals))<br /><span style="color: #3366ff;">for e in</span> newArr:<br /><span style="color: #3366ff;">print</span>(e)</p>
+
+
+  <!-- Python Array Theory End -->
+    </div>
+ <!-- Second Column is for Google Adds -->
+<div class="col-sm-5" style="background-color:grey;">
+    <div class="container">
+        <!-- new -->
+    <h1>Google Adds Here Pasted</h1>
+    <!-- new end -->
+
+    </div>
+<!-- Second Column is End- for Google Adds -->
+</div>
+    </div>
+<br>
+</div>
+</div>
+<!-- above script are same for all pages. -->
+ <br>
+<br>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

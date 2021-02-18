@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>{{title}}</title
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body style="height:3000px">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Learn Python</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+        <!-- for python menu -->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Select
+       </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'pythonintroduction' %}">Python Introduction</a>
+          <a class="dropdown-item" href="{% url 'pythongettingstarted' %}">Python Getting Started</a>
+          <a class="dropdown-item" href="{% url 'pythonsyntax' %}">Python Syntax & Comment</a>
+          <a class="dropdown-item" href="{% url 'pythonvariable' %}">Python Variables</a>
+          <a class="dropdown-item" href="{% url 'pythondatatype' %}">Python Data Types</a>
+          <a class="dropdown-item" href="{% url 'pythonnumbers' %}">Python Numbers</a>
+          <a class="dropdown-item" href="{% url 'pythoncasting' %}">Python Casting</a>
+          <a class="dropdown-item" href="{% url 'pythonoperators' %}">Python Operators</a>
+          <a class="dropdown-item" href="{% url 'pythonlists' %}">Python Lists</a>
+          <a class="dropdown-item" href="{% url 'pythontuples' %}">Python Tuples</a>
+          <a class="dropdown-item" href="{% url 'pythonsets' %}">Python Sets</a>
+          <a class="dropdown-item" href="{% url 'pythondictionary' %}">Python Dictionaries</a>
+          <a class="dropdown-item" href="{% url 'pythonarray' %}">Python Arrays</a>
+
+
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Funtion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="{% url 'pythonuserinput' %}">Python User Input</a>
+         <a class="dropdown-item" href="{% url 'pythonifelse' %}">Python If...else</a>
+         <a class="dropdown-item" href="{% url 'pythonwhileloops' %}">Python While Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonforloops' %}">Python For Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonfunctions' %}">Python Functions</a>
+         <a class="dropdown-item" href="{% url 'pythonclassobjects' %}">Python Class & Objects</a>
+        </div>
+      </li>
+
+
+        <!-- for python menu end -->
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">Signup<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- navbar area closed here -->
+<!-- columns start -->
+<p>
+    <br>
+    <br>
+    <p>&nbsp;&nbsp;
+     <!---     Amazone Add Start -->
+   <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = '420022-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+    <!-- Amazone Add End -->
+    </p>
+</p>
+<div class="container-fluid">
+   <div class="container-fluid">
+       <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row">
+      <div class="col-sm-7" style="background-color:white;">
+  <!-- Python Set Theory Start -->
+    <h3>SET</h3>
+<p><strong>SET</strong> is a collection element which is<strong><span style="color: #ff9900;"> unindexed, unordered</span> </strong>(output will be randomly), <strong><span style="color: #ff9900;">unchangeable or immutable</span> </strong>but can be add new items as well as <strong><span style="color: #ff9900;">it does not allow duplicate values.</span></strong> SETs are used to store more than one items in a single variable. In Python sets are written with <strong><span style="color: #ff9900;">curly brackets {}.</span></strong></p>
+<p><strong>Create a Set:</strong><br>My_set = {"apple", "banana", "mango","guava"}<br>print(My_set)</p>
+<p>The <strong><span style="color: #3366ff;">set()</span></strong> Constructor- It is also possible to use the <strong><span style="color: #3366ff;">set()</span></strong> constructor to make a set.<br>My_set = <span style="color: #3366ff;">set</span>(("apple", "banana", "cherry","mango","guava"))<span style="color: #ff0000;"> # note the double round-brackets</span><br><span style="color: #3366ff;">print</span>(My_set)</p>
+<p><strong>Access Items</strong><br>We cannot access items in a set by referring to an index, since sets are <strong>unordered</strong> the items has<strong> no index</strong>. But we can use <strong><span style="color: #3366ff;">for</span></strong> loop, or ask, if a specified value is present in a SET, by using the <strong><span style="color: #3366ff;">in</span></strong> keyword.</p>
+<p>e.g. i<br>My_set = {"apple", "banana", "mango"}<br><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> My_set:<br><span style="color: #3366ff;">print</span>(x)</p>
+<p>e.g. ii</p>
+<p>My_set = {"apple", "banana", "mango"}<br><span style="color: #3366ff;">print</span>("banana" <span style="color: #3366ff;">in</span> My_set)&nbsp; &nbsp; &nbsp; <span style="color: #ff0000;"># Check if "banana" is present in the set</span></p>
+<p><strong><span style="color: #ff0000;"><em>Once a SET is created, we cannot change its items, but we can add new items.</em></span></strong></p>
+<p><strong>Add Items </strong>to add <em><span style="color: #ff6600;">one item</span></em> to a set use the <span style="color: #3366ff;"><strong>add() </strong></span>method.<br>To add <em><span style="color: #ff6600;">more than one item</span></em> to a set use the <span style="color: #3366ff;"><strong>update()</strong> </span>method.<br>My_set = {"apple", "banana", "cherry","mango"}<br>My_set.<span style="color: #3366ff;">add</span>("orange")<br><span style="color: #3366ff;">print</span>(My_set)</p>
+<p>My_set = {"apple", "banana", "cherry","mango"}<br>My_set.<span style="color: #3366ff;">update</span>(["orange", "mango", "grapes", "banana"])<br><span style="color: #3366ff;">print</span>(My_set)&nbsp; &nbsp; &nbsp;<span style="color: #ff0000;"># duplicate items are not allowed.</span></p>
+<p><strong>Add Any Iterable</strong><br>The object in the<span style="color: #3366ff;"> update()</span> method does not have be a set, so it can be any iterable object (sets, tuples, lists, dictionaries).<br>My_set = {"apple", "banana", "cherry"}<br>Your_set = {"Guava-set",}<br>Our_tuple = ["Guava-tuple",]<br>This_list = ("Guava-list",)<br>My_set.<span style="color: #3366ff;">update</span>(Your_set)<br>My_set.<span style="color: #3366ff;">update</span>(Our_tuple)<br>My_set.<span style="color: #3366ff;">update</span>(This_list)<br><span style="color: #3366ff;">print</span>(My_set)</p>
+<p><strong>Get the number of items in a set:</strong><br>My_set = {"apple", "banana", "cherry", "mango"}<br><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">len</span>(My_set))</p>
+<p><span style="color: #000000;">To remove an item in a set, use the <span style="color: #3366ff;"><strong>remove()</strong><span style="color: #000000;">,</span></span> or the <strong><span style="color: #3366ff;">discard()</span></strong> method. If the item to remove does not exist in SET, remove() will raise an error while discard() not.</span></p>
+<p>My_set = {"apple", "banana", "cherry","mango"}<br>My_set.<span style="color: #3366ff;">remove</span>("banana")<br>My_set.<span style="color: #3366ff;">remove</span> ("Tree")&nbsp; &nbsp; &nbsp;<span style="color: #ff0000;"> # error</span><br><span style="color: #3366ff;">print</span>(My_set)</p>
+<p>My_set = {"apple", "banana", "cherry","mango"}<br>My_set.<span style="color: #3366ff;">discard</span>("apple")<br>My_set.<span style="color: #3366ff;">discard</span>("Tree")&nbsp; &nbsp; &nbsp; <span style="color: #ff0000;"># no error</span><br><span style="color: #3366ff;">print</span>(My_set)</p>
+<p>We can also use the <strong><span style="color: #3366ff;">pop()</span></strong>, method to remove an item, but this method will remove the last item. Remember that <strong>sets are</strong> <strong>unordered</strong>, so we will not know what item that gets removed. The return value of the pop() method is the removed item.<br>My_set = {"apple", "banana", "cherry","mango"}<br><span style="color: #3366ff;">print</span>(My_set)<br>x = My_set.<span style="color: #3366ff;">pop</span>()<br>x = x + " is the last item is"<br><span style="color: #3366ff;">print</span>(x)</p>
+<p>The&nbsp;<strong><span style="color: #3366ff;">clear()</span> </strong>method empties the SET.<br>My_set = {"apple", "banana", "cherry", "mango"}<br>My_set.<span style="color: #3366ff;">clear</span>()<br><span style="color: #3366ff;">print</span>(My_set)</p>
+<p>The <strong><span style="color: #3366ff;">del</span> </strong>keyword will delete the set completely.<br>My_set = {"apple", "banana", "cherry","mango"}<br><span style="color: #3366ff;">del</span> My_set<br><span style="color: #3366ff;">print</span>(My_set)</p>
+<p><strong>Join two or more Sets-</strong> There are several ways to join two or more sets in Python. We can use the<span style="color: #3366ff;"> <strong>union()</strong></span> method that returns a new set containing all items from both sets, or the <strong><span style="color: #3366ff;">update()</span> </strong>method that inserts all the items from one set into another.<br><strong><em><span style="color: #ff0000;">Note: Both union() and update() will exclude any duplicate items.</span></em></strong><br>My_set1 = {"p", "q" , "r"}<br>My_set2 = {1, 2, 3}<br>My_set3 = My_set1.<span style="color: #3366ff;">union</span>(My_set2)<br><span style="color: #3366ff;">print</span>("after combined two sets \<span style="color: #3366ff;">n</span>")<br><span style="color: #3366ff;">print</span>(My_set3)<br>My_set1 = {"a", "b" , "c"}<br>My_set2 = {1, 2, 3}<br>My_set1.<span style="color: #3366ff;">update</span>(My_set2)<br><span style="color: #3366ff;">print</span>("after updating two sets \<span style="color: #3366ff;">n</span>")<br><span style="color: #3366ff;">print</span>(My_set1)</p>
+<p>The&nbsp;<strong><span style="color: #3366ff;">copy()</span></strong> method is used to copy another SET.<br>fruits = {"apple", "banana", "cherry","Guava"}<br>x = fruits.<span style="color: #3366ff;">copy</span>()<br><span style="color: #3366ff;">print</span>(fruits)<br><span style="color: #3366ff;">print</span>("after copied \<span style="color: #3366ff;">n</span>")<br><span style="color: #3366ff;">print</span>(x)</p>
+<p>The <strong><span style="color: #3366ff;">difference() </span></strong><span style="color: #3366ff;"><span style="color: #000000;">method </span></span>returns a set containing the difference between two or more sets.<br>x = {"apple", "banana", "cherry","mango"}<br>y = {"google", "microsoft", "apple","guava"}<br>z = x.<span style="color: #3366ff;">difference</span>(y)<br><span style="color: #3366ff;">print</span>(z)</p>
+<p>&nbsp;</p>
+
+
+
+
+
+
+  <!-- Python Set Theory End -->
+    </div>
+ <!-- Second Column is for Google Adds -->
+<div class="col-sm-5" style="background-color:grey;">
+    <div class="container">
+        <!-- new -->
+    <h1>Google Adds Here Pasted</h1>
+    <!-- new end -->
+
+    </div>
+<!-- Second Column is End- for Google Adds -->
+</div>
+    </div>
+<br>
+</div>
+</div>
+<!-- above script are same for all pages. -->
+ <br>
+<br>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

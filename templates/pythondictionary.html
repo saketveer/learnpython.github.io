@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>{{title}}</title
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body style="height:3000px">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Learn Python</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+        <!-- for python menu -->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Select
+       </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'pythonintroduction' %}">Python Introduction</a>
+          <a class="dropdown-item" href="{% url 'pythongettingstarted' %}">Python Getting Started</a>
+          <a class="dropdown-item" href="{% url 'pythonsyntax' %}">Python Syntax & Comment</a>
+          <a class="dropdown-item" href="{% url 'pythonvariable' %}">Python Variables</a>
+          <a class="dropdown-item" href="{% url 'pythondatatype' %}">Python Data Types</a>
+          <a class="dropdown-item" href="{% url 'pythonnumbers' %}">Python Numbers</a>
+          <a class="dropdown-item" href="{% url 'pythoncasting' %}">Python Casting</a>
+          <a class="dropdown-item" href="{% url 'pythonoperators' %}">Python Operators</a>
+          <a class="dropdown-item" href="{% url 'pythonlists' %}">Python Lists</a>
+          <a class="dropdown-item" href="{% url 'pythontuples' %}">Python Tuples</a>
+          <a class="dropdown-item" href="{% url 'pythonsets' %}">Python Sets</a>
+          <a class="dropdown-item" href="{% url 'pythondictionary' %}">Python Dictionaries</a>
+          <a class="dropdown-item" href="{% url 'pythonarray' %}">Python Arrays</a>
+
+
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Funtion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="{% url 'pythonuserinput' %}">Python User Input</a>
+         <a class="dropdown-item" href="{% url 'pythonifelse' %}">Python If...else</a>
+         <a class="dropdown-item" href="{% url 'pythonwhileloops' %}">Python While Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonforloops' %}">Python For Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonfunctions' %}">Python Functions</a>
+         <a class="dropdown-item" href="{% url 'pythonclassobjects' %}">Python Class & Objects</a>
+        </div>
+      </li>
+
+
+        <!-- for python menu end -->
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">Signup<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- navbar area closed here -->
+<!-- columns start -->
+<p>
+    <br>
+    <br>
+    <p>&nbsp;&nbsp;
+     <!---     Amazone Add Start -->
+   <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = '420022-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+    <!-- Amazone Add End -->
+    </p>
+</p>
+<div class="container-fluid">
+   <div class="container-fluid">
+       <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row">
+      <div class="col-sm-7" style="background-color:white;">
+  <!-- Python Dictionary Theory Start -->
+    <p><h2><strong>Python Dictionary </strong></h2></p>
+        <p>A <span style="color: #ff9900;"><strong>dictionary</strong></span> is a collection which is<span style="color: #ff9900;"> <strong>unordered, changeable, indexed and does not allow duplicates</strong> </span>values. In Python dictionaries are written with <span style="color: #ff9900;"><strong>curly brackets {}</strong>,</span> and they have<span style="color: #ff9900;"><strong> keys and values.</strong></span></p>
+<p><strong>Create and print a dictionary.</strong><br />My_dict = {<br />"Brand_Key": "suzuki_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020<br />}<br /><span style="color: #3366ff;">print</span>(My_dict)</p>
+<p>We can <strong>access</strong> the items of a dictionary by referring to its <strong>key name</strong>, inside square brackets. Due to it is unordered we cannot refer to an item by using an index.<br />My_dict = {<br />"Brand_Key": "suzuki_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020<br />}<br />x = My_dict["Model_Key"]      <span style="color: #ff0000;">#Get the value of the "model_Key" key.</span><br /><span style="color: #3366ff;">print</span>(x)</p>
+<p>The <strong><span style="color: #3366ff;">get()</span></strong> method that will give the same result.<br />My_dict = {<br />"Brand_Key": "suzuki_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020<br />}<br />x = My_dict.<span style="color: #3366ff;">get</span>("Model_Key") <span style="color: #ff0000;"># Get the value of the "model_Key" key.</span><br /><span style="color: #3366ff;">print</span>(x)</p>
+<p><strong>Change the value of a specific item</strong> by referring to its key name. Change the "year" to 2018.<br />My_dict = {<br />"Brand_Key": "suzuki_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020<br />}<br />My_dict["Year_Key"] = 2019<br /><span style="color: #3366ff;">print</span>(My_dict)</p>
+<p>My_dict = {<br />"Brand_Key": "suzuki_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2019,<br />"Year_Key": 2020<br />}<br /><span style="color: #3366ff;">print</span>(My_dict)   <span style="color: #ff0000;"># duplicate values will overwrite existing values.</span></p>
+<p>The <strong><span style="color: #3366ff;">update()</span></strong> method change key value.<br />My_dict = {<br />"Brand_Key": "suzuki_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2019,<br />}<br />My_dict.<span style="color: #3366ff;">update</span>({"Year_Key ": 2020})<br /><span style="color: #3366ff;">print</span>(My_dict)</p>
+<p><strong>Loop Through a Dictionary</strong> by using a <strong><span style="color: #3366ff;">for</span></strong> loop. the return value are the ''<strong>keys''</strong> of the dictionary.<br />My_dict = {<br />"Brand_Key": "suzuki_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020<br />}<br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> My_dict:<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p><strong>secondly we can use <span style="color: #3366ff;">values()</span> method.</strong><br />for x in My_dict.<span style="color: #3366ff;">values</span>():<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p>string, int, boolean, and list data types.<br />My_dict = {<br />"brand": "suzuki",<br />"electric": True,<br />"year": 2109,<br />"colors": ["white", "blue", "gray","red"]<br />}<br /><span style="color: #3366ff;">print</span>(My_dict)<br /><strong>Print the data type of a dictionary.</strong><br /><span style="color: #3366ff;">print</span>(type(My_dict))</p>
+<p><strong>Loop Through a Dictionary</strong> by using a<span style="color: #3366ff;"><strong> for</strong></span> loop. The return value are the ''<strong>key’s value''</strong> of the dictionary.<br />My_dict = {<br />"Brand_Key": "suzuki_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020 }<br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> My_dict:<br /><span style="color: #3366ff;">print</span>(My_dict[x])</p>
+<p><strong>Loop through both keys and values,</strong> by using the<strong><span style="color: #3366ff;"> items()</span> </strong>method.<br />My_dict = {<br />"Brand_Key": "suzuki_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020<br />}<br /><span style="color: #3366ff;">for</span> x, y <span style="color: #3366ff;">in</span> My_dict.<span style="color: #3366ff;">items</span>():<br /><span style="color: #3366ff;">print</span>(x, y)</p>
+<p><strong>Check if Key Exists-</strong> To determine if a specified key is present in a dictionary use the <strong><span style="color: #3366ff;">"in"</span></strong> keyword. Check if<strong> "model_Key"</strong> or ''<strong>Brand_Key''</strong> are present in the dictionary.<br />My_dict = {<br />"Brand_Key": "suzuki_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020<br />}<br /><span style="color: #3366ff;">if</span> "Model_Key" <span style="color: #3366ff;">in</span> My_dict:<br /><span style="color: #3366ff;">print</span>("Yes, 'searching key' is present in the My_dict dictionary")</p>
+<p><strong>Dictionary Length- </strong>To determine how many items (key-value pairs) a dictionary has, use the<strong><span style="color: #3366ff;"> len()</span> </strong>function.<br />My_dict = {<br />"Brand_Key": "suzuki_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020,<br />"Date_Key": ""<br />}<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">len</span>(My_dict))</p>
+<p><strong>Adding an item to the dictionary</strong> is done by using a new index key and assigning a value to it.<br />My_dict = {<br />"Brand_Key": "aifa_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020,</p>
+<p>}<br />My_dict["Date_Key"] = "22-06-2020"<br /><span style="color: #3366ff;">print</span>(My_dict)</p>
+<p>The<strong><span style="color: #3366ff;"> pop()</span> </strong>method removes the item with the specified key name.<br />My_dict = {<br />"Brand_Key": "aifa_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020,<br />"Date_Key": "20.06-2020"<br />}<br />My_dict.<span style="color: #3366ff;">pop</span>("Model_Key")<br /><span style="color: #3366ff;">print</span>(My_dict)</p>
+<p>The<strong><span style="color: #3366ff;"> popitem()</span></strong> method removes the last inserted item (in versions before 3.7, a random item is removed instead).<br />My_dict = {<br />"Brand_Key": "aifa_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020,<br />"Date_Key": "20.06-2020"<br />}<br />My_dict.<span style="color: #3366ff;">popitem</span>()<br /><span style="color: #3366ff;">print</span>(My_dict)</p>
+<p>The <strong><span style="color: #3366ff;">del</span> </strong>keyword removes the item with the specified key name.<br />My_dict = {<br />"Brand_Key": "suzuki_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020,<br />"Date_Key": "20.06-2020"<br />}<br /><span style="color: #3366ff;">del</span> My_dict["Model_Key"]<br /><span style="color: #3366ff;">print</span>(My_dict)</p>
+<p>The <strong><span style="color: #3366ff;">del</span> </strong>keyword <strong>can also delete the dictionary completely.</strong><br />My_dict = {<br />"Brand_Key": "aifa_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020,<br />"Date_Key": "20.06-2020"<br />}<br /><span style="color: #3366ff;">del</span> My_dict<br /><span style="color: #3366ff;">print</span>(My_dict)   <span style="color: #ff0000;"># this line will cause an error because "My_dict" no longer exists.</span></p>
+<p>The <strong><span style="color: #3366ff;">clear()</span></strong> method empties the dictionary:<br />My_dict = {<br />"Brand_Key": "aifa_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020,<br />"Date_Key": "20.06-2020"<br />}<br />My_dict.<span style="color: #3366ff;">clear</span>()<br /><span style="color: #3366ff;">print</span>(My_dict)</p>
+<p>The <strong><span style="color: #3366ff;">copy()</span> </strong>method copies a dictionary and insert into a new one.<br />My_dict = {<br />"Brand_Key": "aifa_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020,<br />"Date_Key": "20.06-2020"<br />}<br />Your_dict = My_dict.<span style="color: #3366ff;">copy</span>()<br /><span style="color: #3366ff;">print</span>(Your_dict)<span style="color: #ff0000;"> # copied dictionary</span><br /><span style="color: #3366ff;">print</span>(My_dict)   <span style="color: #ff0000;"># original dictionary</span></p>
+<p><strong>Or</strong> Make a copy of a dictionary with the <strong><span style="color: #3366ff;">dict()</span> </strong>function.<br />My_dict = {<br />"Brand_Key": "aifa_value",<br />"Model_Key": "newmodel_value",<br />"Year_Key": 2020,<br />"Date_Key": "20.06-2020"<br />}<br />Your_dict = <span style="color: #3366ff;">dict</span>(My_dict)<br /><span style="color: #3366ff;">print</span>(Your_dict)  <span style="color: #ff0000;"> # copied dictionary</span><br /><span style="color: #3366ff;">print</span>(My_dict)    <span style="color: #ff0000;"># original dictionary</span></p>
+<p><strong>Nested Dictionaries,</strong> a dictionary can also contain many dictionaries, this is called nested dictionaries.<br />Nested_dict = {<br />"dict_1" : {<br />"Name" : "Saket",<br />"Sex" : "Male"<br />},<br />"dict_2" : {<br />"Name" : "Kunal",<br />"Sex" : "Male"<br />},<br />"dict_3" : {<br />"Name" : "Leena",<br />"Sex" : "Female"<br />}<br />}<br /><span style="color: #3366ff;">print</span>(Nested_dict)</p>
+<p><strong>if we want to nest three dictionaries</strong> that already exists as dictionaries.<br />dict_1 ={<br />"Name" : "Saket",<br />"Sex" : "Male"<br />}<br />dict_2 ={<br />"Name" : "Kunal",<br />"Sex" : "Male"<br />}<br />dict_3 ={<br />"Name" : "Leena",<br />"Sex" : "Female"<br />}</p>
+<p>Nested_dict = {<br />"dict_1" : dict_1,<br />"dict_2" : dict_2,<br />"dict_3" : dict_3<br />}<br /><span style="color: #3366ff;">print</span>(Nested_dict)</p>
+<p>The <strong><span style="color: #3366ff;">dict()</span></strong> <strong>constructor</strong> to make a new dictionary.<br />My_dict = dict(Brand_Key="aifa_value", Model_Key="newmodel_value", Year_Key=2020)<br /><span style="color: #3366ff;">print</span>(My_dict)</p>
+
+  <!-- Python Dictionary Theory End -->
+    </div>
+ <!-- Second Column is for Google Adds -->
+<div class="col-sm-5" style="background-color:grey;">
+    <div class="container">
+        <!-- new -->
+    <h1>Google Adds Here Pasted</h1>
+    <!-- new end -->
+
+    </div>
+<!-- Second Column is End- for Google Adds -->
+</div>
+    </div>
+<br>
+</div>
+</div>
+<!-- above script are same for all pages. -->
+ <br>
+<br>
+
+
+
+</body>
+</html>

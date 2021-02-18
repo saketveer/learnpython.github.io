@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>{{title}}</title
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body style="height:3000px">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Learn Python</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+        <!-- for python menu -->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Select
+       </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'pythonintroduction' %}">Python Introduction</a>
+          <a class="dropdown-item" href="{% url 'pythongettingstarted' %}">Python Getting Started</a>
+          <a class="dropdown-item" href="{% url 'pythonsyntax' %}">Python Syntax & Comment</a>
+          <a class="dropdown-item" href="{% url 'pythonvariable' %}">Python Variables</a>
+          <a class="dropdown-item" href="{% url 'pythondatatype' %}">Python Data Types</a>
+          <a class="dropdown-item" href="{% url 'pythonnumbers' %}">Python Numbers</a>
+          <a class="dropdown-item" href="{% url 'pythoncasting' %}">Python Casting</a>
+          <a class="dropdown-item" href="{% url 'pythonoperators' %}">Python Operators</a>
+          <a class="dropdown-item" href="{% url 'pythonlists' %}">Python Lists</a>
+          <a class="dropdown-item" href="{% url 'pythontuples' %}">Python Tuples</a>
+          <a class="dropdown-item" href="{% url 'pythonsets' %}">Python Sets</a>
+          <a class="dropdown-item" href="{% url 'pythondictionary' %}">Python Dictionaries</a>
+          <a class="dropdown-item" href="{% url 'pythonarray' %}">Python Arrays</a>
+
+
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Funtion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="{% url 'pythonuserinput' %}">Python User Input</a>
+         <a class="dropdown-item" href="{% url 'pythonifelse' %}">Python If...else</a>
+         <a class="dropdown-item" href="{% url 'pythonwhileloops' %}">Python While Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonforloops' %}">Python For Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonfunctions' %}">Python Functions</a>
+         <a class="dropdown-item" href="{% url 'pythonclassobjects' %}">Python Class & Objects</a>
+        </div>
+      </li>
+
+
+        <!-- for python menu end -->
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">Signup<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- navbar area closed here -->
+<!-- columns start -->
+<p>
+    <br>
+    <br>
+    <p>&nbsp;&nbsp;
+     <!---     Amazone Add Start -->
+   <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = '420022-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+    <!-- Amazone Add End -->
+    </p>
+</p>
+<div class="container-fluid">
+   <div class="container-fluid">
+       <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row">
+      <div class="col-sm-7" style="background-color:white;">
+  <!-- Python Tuple Theory Start -->
+          <p><h2><strong>Python Tuple</strong></h2></p>
+          <h3><strong>Tuple</strong></h3>
+<p>It is a collection element which is <strong><span style="color: #ff9900;">ordered, unchangeable or immutable and allow duplicate</span></strong> values. Tuples are used to store more than one items in a single variable. In Python tuples are written with <strong><span style="color: #ff9900;">round</span></strong> <strong><span style="color: #ff9900;">brackets ().</span></strong><br />friends_tuple= (“Amit”,”Sumit”,”Rakesh”,”Rajesh”,”Saket”,”Saket”)</p>
+<p><strong>Ordered:</strong><br />The tuples are <strong><span style="color: #ff9900;">ordered,</span></strong> the items have a defined order, and that order will not change.</p>
+<p><strong>Unchangeable:</strong><br />Tuples are <strong><span style="color: #ff9900;">unchangeable</span> <span style="color: #ff9900;">or immutable </span></strong>, we cannot change, add or remove items after the tuple has been created.</p>
+<p><strong>Allow Duplicates:</strong><br />Tuples are stored item in index, tuples can have items with the same value:</p>
+<p><strong>Create a Tuple:</strong><br />My_tuple = ("apple", "banana", "orange")<br /><span style="color: #3366ff;">print</span>(My_tuple)<br /><span style="color: #3366ff;">print</span>(My_tuple[1])</p>
+<p><strong>Tuple with duplicate value:</strong><br />My_tuple = ("apple", "banana", "orange", "banana")<br /><span style="color: #3366ff;">print</span>(My_tuple)</p>
+<p><strong>Find the number of items in the tuple:</strong><br />My_tuple = ("apple", "banana", "orange", "banana")<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">len</span>(My_tuple))</p>
+<p><strong>string, int and boolean data types:</strong><br />My_tuple1 = ("apple", "banana", "orange", "banana")<br />My_tuple2 = (1, 2, 3, 4, 100)<br />My_tuple3 = (False, True, False)<br /><span style="color: #3366ff;">print</span>(My_tuple1)<br /><span style="color: #3366ff;">print</span>(My_tuple2)<br /><span style="color: #3366ff;">print</span>(My_tuple3)</p>
+<p><strong>A tuple with strings, integers and boolean values:</strong><br />My_tuple=("ABC", 45, True, False, 50, "male")<br /><span style="color: #3366ff;">print</span>(My_tuple)</p>
+<p><strong>What is the data type of a Tuple?</strong><br />friends= (“Amit”,”Sumit”,”Rakesh”,”Rajesh”,”Saket”)<br /><span style="color: #3366ff;">print</span>(type(friends))        <span style="color: #ff0000;"># &lt;class ‘Tuple’&gt;</span></p>
+<p><strong>By using the tuple() constructor to make a tuple:</strong><br />friends_tuple = tuple((“Amit”,”Sumit”,”Rakesh”,”Rajesh”,”Saket”)) # use the double rounded brackets ().<br /><span style="color: #3366ff;">print</span>(friends_tuple)</p>
+<p><strong>We can access tuple items by referring to the index number, inside square brackets:</strong><br />My_tuple = ("apple", "banana", "orange")<br /><span style="color: #3366ff;">print</span>(My_tuple[1])</p>
+<p><strong>Print the last item of the tuple: </strong><br />This_tuple = ("apple", "banana", "cherry")<br /><span style="color: #3366ff;">print</span>(This_tuple[-1])</p>
+<p><em># Negative indexing means beginning from the end, -1 refers to the last item, -2 refers to the second last item etc.</em></p>
+<p><strong>Range of Indexes:</strong><br />My_tuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")<br /><span style="color: #3366ff;">print</span>(My_tuple[2:5])<br /><span style="color: #3366ff;">print</span>(My_tuple[:5])<br /><span style="color: #3366ff;">print</span>(My_tuple[2:])</p>
+<p><strong>Range of Negative Indexes:</strong><br />This example returns the items from index -4 (included) to index -1 (excluded).<br />This_tuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")<br /><span style="color: #3366ff;">print</span>(This_tuple[-4:-1])</p>
+
+          <p><strong>Join two or more tuples by useing the + operator:</strong><br />tuple1 = ("a", "b", "c")<br />tuple2 = (1, 2, 3)<br />tuple3 = tuple1 + tuple2<br /><span style="color: #3366ff;">print</span>(tuple3)</p>
+<p><strong>Multiply the fruits tuple by 3:</strong><br />fruits = ("apple", "banana", "mango")<br />result_tuple = fruits * 3<br /><span style="color: #3366ff;">print</span>(result_tuple)</p>
+<p><strong>Change Tuple Values Once a tuple is created,</strong> We cannot change its values. Tuples are unchangeable, or immutable. But at run time. We can convert the tuple into a list, change value, and convert the list back into a tuple.<br />x = ("apple", "banana", "cherry")<br />y = list(x)<br />y[1] = "kiwi"<br />x = tuple(y)<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p><strong>By using for Loop or Iterate through the items and print the values:</strong><br />This_tuple = ("apple", "banana", "cherry")<br />for x in This_tuple:<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p><strong>Check "if " cherry is present in the tuple:</strong><br />This_tuple = ("apple", "banana", "cherry", "orange")<br />if "cherry" in This_tuple:<br /><span style="color: #3366ff;">print</span>("Yes, 'item' is in the fruits tuple")</p>
+<p><strong>Tuple Length</strong> to determine how many items a tuple has, use the <strong><span style="color: #3366ff;">len</span></strong>() method:<br />This_tuple = ("apple", "banana", "cherry", "orange")<br /><span style="color: #3366ff;">print</span>(len(This_tuple))</p>
+<p><strong>Create a Tuple</strong> <strong>with only one item,</strong> We have to add a comma after the item, otherwise Python will not recognize it as a tuple.<br />This_tuple = ("apple",)<br /><span style="color: #3366ff;">print</span>(type(This_tuple))</p>
+<p><strong>#NOT a tuple</strong><br />This_tuple = ("apple")<br /><span style="color: #3366ff;">print</span>(type(This_tuple))</p>
+<p><strong>Remove Items from tuple.</strong> We cannot remove items in a tuple. Tuples are unchangeable, so We have to delete the tuple completely. By using del keyword we can delete the tuple completely.<br />This_tuple = ("apple", "banana", "orange","mango")<br /><span style="color: #3366ff;">del</span> This_tuple<br /><span style="color: #3366ff;">print</span>(This_tuple)    <span style="color: #ff0000;"># it will raise an error because the tuple no longer</span> exists</p>
+<p><strong>Unpacking a Tuple</strong> when tuple is created, normally assign values to it. It is called "packing" While extracting value one-by one is called unpacking.<br />fruit_tuple = ("apple", "banana", "orange","mango")<br />(apple1, banana1, orange1, mango1) = fruit_tuple<br /><span style="color: #3366ff;">print</span>(apple1)<br /><span style="color: #3366ff;">print</span>(banana1)<br /><span style="color: #3366ff;">print</span>(orange1)<br /><span style="color: #3366ff;">print</span>(mango1)<br /><span style="color: #3366ff;">print</span>(apple1) # result repeated</p>
+<p><span style="color: #ff6600;"><em>Note: The number of variables must match the number of values in the tuple.</em></span></p>
+<p>Using <strong>Asterix*</strong> If the number of variables is less than the number of values of the tuple, we can add an * to the variable name and the values will be assigned to the variable as a list.<br />fruit_tuple = ("apple", "banana", "orange","mango")<br />(apple1, banana1, *orange1) = fruit_tuple<br /><span style="color: #3366ff;">print</span>(apple1)<br /><span style="color: #3366ff;">print</span>(banana1)<br /><span style="color: #3366ff;">print</span>(orange1) # rest of values assigned to orange1.</p>
+<p>If the A<strong>sterix*</strong> is added to another variable name Python will assign all values to that variable and rest of values assigned to another respective variable.<br />fruit_tuple = ("apple", "mango", "papaya", "pineapple", "cherry", "bherry")<br />(*apple1, mango1, papaya1) = fruit_tuple<br /><span style="color: #3366ff;">print</span>(apple1)<br /><span style="color: #3366ff;">print</span>(mango1)<br /><span style="color: #3366ff;">print</span>(papaya1)</p>
+<p><strong>Join two</strong> <strong>or more tuples</strong> by using the <strong><span style="color: #3366ff;">+ </span></strong>operator:<br />My_tuple1 = ("P", "Q" , "R")<br />My_tuple2 = (6, 7, 8)<br />My_tuple3 = (1, 2, 3)<br />My_tuple4 = My_tuple1 + My_tuple2 + My_tuple3<br /><span style="color: #3366ff;">print</span>(My_tuple4)</p>
+<p>The<strong> <span style="color: #3366ff;">tuple</span>() Constructor</strong> can be use make a tuple.<br />This_tuple = <span style="color: #3366ff;">tuple</span>(("apple", "banana", "mango")) <span style="color: #ff0000;"># note the double round-brackets</span><br /><span style="color: #3366ff;">print</span>(This_tuple)</p>
+<p><strong>Count the no. of items in a tuple:</strong> <br />This_tuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)<br />x = This_tuple.count(5)<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p><strong>Find the index position of an item:</strong><br />This_tuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)<br />x = This_tuple.index(4)<br /><span style="color: #3366ff;">print</span>(x)</p>
+<p> </p>
+
+  <!-- Python Tuple Theory End -->
+    </div>
+ <!-- Second Column is for Google Adds -->
+<div class="col-sm-5" style="background-color:grey;">
+    <div class="container">
+        <!-- new -->
+    <h1>Google Adds Here Pasted</h1>
+    <!-- new end -->
+
+    </div>
+<!-- Second Column is End- for Google Adds -->
+</div>
+    </div>
+<br>
+</div>
+</div>
+<!-- above script are same for all pages. -->
+ <br>
+<br>
+
+
+</body>
+</html>

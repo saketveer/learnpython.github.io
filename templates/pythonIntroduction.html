@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>{{title}}</title
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body style="height:3000px">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Learn Python</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+        <!-- for python menu -->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Select
+       </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'pythonintroduction' %}">Python Introduction</a>
+          <a class="dropdown-item" href="{% url 'pythongettingstarted' %}">Python Getting Started</a>
+          <a class="dropdown-item" href="{% url 'pythonsyntax' %}">Python Syntax & Comment</a>
+          <a class="dropdown-item" href="{% url 'pythonvariable' %}">Python Variables</a>
+          <a class="dropdown-item" href="{% url 'pythondatatype' %}">Python Data Types</a>
+          <a class="dropdown-item" href="{% url 'pythonnumbers' %}">Python Numbers</a>
+          <a class="dropdown-item" href="{% url 'pythoncasting' %}">Python Casting</a>
+          <a class="dropdown-item" href="{% url 'pythonoperators' %}">Python Operators</a>
+          <a class="dropdown-item" href="{% url 'pythonlists' %}">Python Lists</a>
+          <a class="dropdown-item" href="{% url 'pythontuples' %}">Python Tuples</a>
+          <a class="dropdown-item" href="{% url 'pythonsets' %}">Python Sets</a>
+          <a class="dropdown-item" href="{% url 'pythondictionary' %}">Python Dictionaries</a>
+          <a class="dropdown-item" href="{% url 'pythonarray' %}">Python Arrays</a>
+
+
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Funtion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="{% url 'pythonuserinput' %}">Python User Input</a>
+         <a class="dropdown-item" href="{% url 'pythonifelse' %}">Python If...else</a>
+         <a class="dropdown-item" href="{% url 'pythonwhileloops' %}">Python While Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonforloops' %}">Python For Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonfunctions' %}">Python Functions</a>
+         <a class="dropdown-item" href="{% url 'pythonclassobjects' %}">Python Class & Objects</a>
+        </div>
+      </li>
+
+
+        <!-- for python menu end -->
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">Signup<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- navbar area closed here -->
+<!-- columns start -->
+<p>
+    <br>
+    <br>
+    <p>&nbsp;&nbsp;
+     <!---     Amazone Add Start -->
+   <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = '420022-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+    <!-- Amazone Add End -->
+    </p>
+</p>
+<div class="container-fluid">
+   <div class="container-fluid">
+       <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row">
+      <div class="col-sm-7" style="background-color:white;">
+  <!-- Python Introduction Start -->
+          <p><h2><strong>Introduction of Python</h2></strong></p>
+<p style="mso-margin-top-alt: auto; text-align: justify; text-justify: distribute-all-lines; line-height: 105%;">Python is open source, which means it is free to download and free to use even for commercial applications. It is widely used in the industry today, it is one of the most dynamic and versatile general-purpose, high level, interpreted, interactive, object-oriented and scripting programming languages and it is designed or coded in <a style="color: #000000;" href="https://www.edureka.co/blog/c-programming-tutorial/" target="_blank" rel="noopener noreferrer">C</a>. language.</p>
+<p> </p>
+<p style="mso-margin-top-alt: auto; text-align: justify; text-justify: distribute-all-lines; line-height: 105%;">Python was created by Guido Van Rossum in 1991 and further developed by the Python Software Foundation. It is designed to be easy to read and simple to implement. Python uses English keywords frequently whereas other languages use punctuation and It has designed with an attention on code readability and its syntax allows programmers to express their concepts in fewer lines of code.</p>
+<p style="mso-margin-top-alt: auto; text-align: justify;"><strong>Python is utilized for</strong></p>
+<ol start="1" type="1">
+<li style="mso-margin-top-alt: auto; margin-bottom: 0cm; text-align: justify; line-height: normal; mso-list: l1 level1 lfo1; tab-stops: list 36.0pt;">Software development</li>
+<li style="mso-margin-top-alt: auto; margin-bottom: 0cm; text-align: justify; line-height: normal; mso-list: l1 level1 lfo1; tab-stops: list 36.0pt;">System scripting</li>
+<li style="mso-margin-top-alt: auto; margin-bottom: 0cm; text-align: justify; line-height: normal; mso-list: l1 level1 lfo1; tab-stops: list 36.0pt;">Web development (server-side)</li>
+<li style="mso-margin-top-alt: auto; margin-bottom: 0cm; text-align: justify; line-height: normal; mso-list: l1 level1 lfo1; tab-stops: list 36.0pt;">Mathematics</li>
+</ol>
+<p style="margin: 0cm; text-align: justify;"><strong>Python can do ?</strong></p>
+<ul type="disc">
+<li style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal; mso-list: l2 level1 lfo2; tab-stops: list 36.0pt;">Python can be used on a server to create web applications.</li>
+<li style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal; mso-list: l2 level1 lfo2; tab-stops: list 36.0pt;">Python can connect to database systems. It can also read and modify files.</li>
+<li style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal; mso-list: l2 level1 lfo2; tab-stops: list 36.0pt;">Python can be used to handle big data and perform complex mathematics.</li>
+<li style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal; mso-list: l2 level1 lfo2; tab-stops: list 36.0pt;">Python can be used alongside software to create workflows.</li>
+<li style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal; mso-list: l2 level1 lfo2; tab-stops: list 36.0pt;">Python can be used for rapid prototyping, or for production-ready software development.</li>
+</ul>
+<p style="mso-margin-top-alt: auto; text-align: justify;"><strong>Why we use Python ?</strong></p>
+<ul type="disc">
+<li style="mso-margin-top-alt: auto; margin-bottom: 0cm; text-align: justify; line-height: normal; mso-list: l0 level1 lfo3; tab-stops: list 36.0pt;">Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+<li style="mso-margin-top-alt: auto; margin-bottom: 0cm; text-align: justify; line-height: normal; mso-list: l0 level1 lfo3; tab-stops: list 36.0pt;">Python has a simple syntax similar to the English language.</li>
+<li style="mso-margin-top-alt: auto; margin-bottom: 0cm; text-align: justify; line-height: normal; mso-list: l0 level1 lfo3; tab-stops: list 36.0pt;">Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+<li style="mso-margin-top-alt: auto; margin-bottom: 0cm; text-align: justify; line-height: normal; mso-list: l0 level1 lfo3; tab-stops: list 36.0pt;">Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+<li style="mso-margin-top-alt: auto; margin-bottom: 0cm; text-align: justify; line-height: normal; mso-list: l0 level1 lfo3; tab-stops: list 36.0pt;">Python relies on indentation, using white space, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+</ul>
+<p style="margin: 0cm; text-align: justify;"><strong>Python key features</strong></p>
+<ul>
+<li>Support for GUI</li>
+<li>Easy to Code. Python is a very developer-friendly language</li>
+<li>Open Source and Free</li>
+<li>Object-Oriented Approach</li>
+<li>High-Level Language</li>
+<li>Integrated by Nature</li>
+<li>Highly Portable</li>
+<li>Highly Dynamic</li>
+</ul>
+<p style="margin: 0cm; text-align: justify;"><strong>Support for GUI</strong></p>
+<p style="margin: 0cm; text-align: justify;">GUI or Graphical User Interface</p>
+<p style="margin: 0cm; text-align: justify;"><b style="font-style: inherit; font-family: Arial, sans-serif; color: #0000ff;"> </b></p>
+<p style="margin: 0cm; text-align: justify;"><strong>Easy to code</strong></p>
+<p style="margin: 0cm; text-align: justify;">Python is a very developer-friendly language which means that anyone and everyone can learn to code it in a couple of hours or days. As compared to other object-oriented programming languages like Java, C, C++, and C#, Python is one of the easiest to learn.</p>
+<p style="margin: 0cm; text-align: justify;"> </p>
+<p style="margin: 0cm; text-align: justify;"><strong>Open Source and free</strong></p>
+<p style="margin: 0cm; text-align: justify;">Python is an open-source programming language which means anyone can create and contribute to its development. where thousands of coders gather daily to improve this language in online forum. The Python is free to download and can run in any operating system, it could be Windows, Mac or Linux.</p>
+<p style="margin: 0cm; text-align: justify;"> </p>
+<p style="margin: 0cm; text-align: justify;"><strong>Object-Oriented Approach</strong></p>
+<p style="margin: 0cm; text-align: justify;">Python is object-oriented approach. it recognizes the concept of class and object encapsulation thus allowing programs to be efficient in the long run.</p>
+<p style="margin: 0cm; text-align: justify;"> </p>
+<p style="margin: 0cm; text-align: justify;"><strong>High-Level Language</strong></p>
+<p style="margin: 0cm; text-align: justify;">HLL means that when you code in Python you don’t need to be aware of the coding structure, architecture as well as memory management.</p>
+<p style="margin: 0cm; text-align: justify;"> </p>
+<p style="margin: 0cm; text-align: justify;"><strong>Integrated by Nature</strong></p>
+<p style="margin: 0cm; text-align: justify;">Python is an integrated language by nature. the python interpreter executes codes one line at a time. Python doesn't need to compile thus Python code making the debugging process much easier and efficient. When executed, the Python code is immediately converted into an intermediate form also known as byte-code which makes it easier to execute and also saves runtime in the long run.</p>
+<p style="margin: 0cm; text-align: justify;"> </p>
+<p style="margin: 0cm; text-align: justify;"><strong>Highly Portable</strong></p>
+<p style="margin: 0cm; text-align: justify;">Suppose we are running Python on Windows and we need to shift on a Linux or a Mac OS system or vice-versa, then we can easily achieve in Python without changing the code. While it is not possible in other programming languages, thus making Python one of the most portable languages available in the industry.</p>
+<p style="margin: 0cm; text-align: justify;"> </p>
+<p style="margin-top: 0cm; text-align: justify; line-height: 105%;"><strong>Highly Dynamic</strong></p>
+<p style="margin: 0cm; text-align: justify;">We do not need to specify the type of the variable during coding, type of a variable is decided at the run time and not in advance. due to the presence of this feature, it saves time and increases efficiency.</p>
+<p style="margin: 0cm; text-align: justify;"><b style="color: #0000ff; font-family: var( --e-global-typography-text-font-family );"> </b></p>
+<p style="margin: 0cm; text-align: justify;"><strong>Extensive Array of Library</strong></p>
+<p style="margin: 0cm; text-align: justify;">Python comes inbuilt with a large number of libraries that can be imported at any instance and be used in a specific program. The libraries also make sure that we don’t need to write all the code ourselves and can import from the libraries.</p>
+<p style="margin: 0cm; text-align: justify;"> </p>
+<p style="margin: 0cm; text-align: justify;"><strong>Support for Other Languages</strong></p>
+<p style="margin: 0cm; text-align: justify;">Being coded in C, Python by default supports the execution of code written in other programming languages such as C, Java and C#, thus making it one of the versatile in the industry.</p>
+<p style="mso-margin-top-alt: auto; text-align: justify; line-height: 105%;">Python is written in English. But there are several implementations: CPython (written in C), PyPy (written in Python) </p>
+<p style="mso-margin-top-alt: auto; text-align: justify;"> </p>
+<p>https://youtu.be/kTsYGXyZA7I</p>
+
+
+
+
+
+
+  <!-- Python Introduction End -->
+    </div>
+ <!-- Second Column is for Google Adds -->
+<div class="col-sm-5" style="background-color:grey;">
+    <div class="container">
+        <!-- new -->
+    <h1>Google Adds Here Pasted</h1>
+    <!-- new end -->
+
+    </div>
+<!-- Second Column is End- for Google Adds -->
+</div>
+    </div>
+<br>
+</div>
+</div>
+<!-- above script are same for all pages. -->
+ <br>
+<br>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

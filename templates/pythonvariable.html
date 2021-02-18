@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>{{title}}</title
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body style="height:3000px">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Learn Python</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+        <!-- for python menu -->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Select
+       </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'pythonintroduction' %}">Python Introduction</a>
+          <a class="dropdown-item" href="{% url 'pythongettingstarted' %}">Python Getting Started</a>
+          <a class="dropdown-item" href="{% url 'pythonsyntax' %}">Python Syntax & Comment</a>
+          <a class="dropdown-item" href="{% url 'pythonvariable' %}">Python Variables</a>
+          <a class="dropdown-item" href="{% url 'pythondatatype' %}">Python Data Types</a>
+          <a class="dropdown-item" href="{% url 'pythonnumbers' %}">Python Numbers</a>
+          <a class="dropdown-item" href="{% url 'pythoncasting' %}">Python Casting</a>
+          <a class="dropdown-item" href="{% url 'pythonoperators' %}">Python Operators</a>
+          <a class="dropdown-item" href="{% url 'pythonlists' %}">Python Lists</a>
+          <a class="dropdown-item" href="{% url 'pythontuples' %}">Python Tuples</a>
+          <a class="dropdown-item" href="{% url 'pythonsets' %}">Python Sets</a>
+          <a class="dropdown-item" href="{% url 'pythondictionary' %}">Python Dictionaries</a>
+          <a class="dropdown-item" href="{% url 'pythonarray' %}">Python Arrays</a>
+
+
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Funtion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="{% url 'pythonuserinput' %}">Python User Input</a>
+         <a class="dropdown-item" href="{% url 'pythonifelse' %}">Python If...else</a>
+         <a class="dropdown-item" href="{% url 'pythonwhileloops' %}">Python While Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonforloops' %}">Python For Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonfunctions' %}">Python Functions</a>
+         <a class="dropdown-item" href="{% url 'pythonclassobjects' %}">Python Class & Objects</a>
+        </div>
+      </li>
+
+
+        <!-- for python menu end -->
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">Signup<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- navbar area closed here -->
+<!-- columns start -->
+<p>
+    <br>
+    <br>
+    <p>&nbsp;&nbsp;
+     <!---     Amazone Add Start -->
+   <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = '420022-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+    <!-- Amazone Add End -->
+    </p>
+</p>
+<div class="container-fluid">
+   <div class="container-fluid">
+       <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row">
+      <div class="col-sm-7" style="background-color:white;">
+  <!-- Python Variables Theory Start -->
+         <p><h2><strong>Python Variables</h2></strong></p>
+          <p><strong>Variables</strong><br />Variable or scalar is a storage location (identified by a memory address). Variable name associated with symbolic name, which contains some known or unknown quantity of information referred to as a value.</p>
+<p><strong>Variable Names</strong><br />A variable can have a short name (like x and y) or a more than one character (Sex, sex, name, Name, Tot etc.).</p>
+<p><strong>Rules for Python variables:</strong><br />• A variable name must start with a letter or the underscore character<br />• A variable name cannot start with a number<br />• A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )<br />• Variable names are case-sensitive (Sex, sex and SEX are three different variables)<br />e.g.<br />Legal variable names:<br />myvar = "Saket"<br />my_var = "Saket"<br />_my_var = "Saket"<br />myVar = " Saket"<br />MYVAR = " Saket"<br />myvar3 = " Saket"</p>
+<p>e.g.<br />Illegal variable names:<br />3myvar = "Saket"<br />my-var = " Saket"<br />my var = " Saket"</p>
+<p><strong>Creating Variables</strong><br />Python has no keyword or command for declaring a variable.<br />A variable is created as like we first assign a value to it.<br />e.g.<br />x = 10<br />y = "saket"<br />z=”A”<br /><span style="color: #3366ff;">print</span>(x) <br /><span style="color: #3366ff;">print</span>(y) <br /><span style="color: #3366ff;">print</span>(z) </p>
+<p><span style="color: #000000;"><strong>Note:</strong> </span><br />In Python, Strings are arrays of bytes representing Unicode characters. A string is a collection of one or more characters put in a single quote, double-quote or triple quote. <strong>In python there is no character data type</strong>, a character is a string of length one. It is represented by str class.</p>
+
+          <p><strong>Casting</strong><br />If we need to specify the data type of a variable, it can be done with casting.<br />e.g.<br />x = <span style="color: #3366ff;">str</span>(5) # x will be '5'<br />y = <span style="color: #3366ff;">int</span>(5) # y will be 5<br />z = <span style="color: #3366ff;">float</span>(5) # z will be 5.0</p>
+<p>We will learn more about <a href="https://www.w3schools.com/python/python_datatypes.asp">data types</a> and <a href="https://www.w3schools.com/python/python_casting.asp">casting</a> later in this tutorial.</p>
+
+          <p><strong>Single or Double Quotes?</strong><br />String variables can be declared either by using single or double quotes:<br />e.g.<br />x = "saket"<br />x = 'saket'        # here x is the same as</p>
+<p><strong>Case-Sensitive</strong><br />Variable names are case-sensitive.<br />e.g.<br />It will create two variables:<br />r = 10<br />R= "Saket"<br />#both will not overwrite to each other.</p>
+<p><strong>Assign Multiple Values</strong><br />Python allows to assign value to multiple variables in one line:<br />e.g.<br />x, y, z = "Guava", "Pineapple", "Mango"<br /><span style="color: #3366ff;">print</span>(x) # x will print Guava<br /><span style="color: #3366ff;">print(</span>y) # y will print Pineapple<br /><span style="color: #3366ff;">print</span>(z) # z will print Mango</p>
+<p><strong>Python allows to assign the same value to multiple variables in one line:</strong><br />e.g.<br />x = y = z = "Mango"<br /><span style="color: #3366ff;">print</span>(x) <br /><span style="color: #3366ff;">print</span>(y)<br /><span style="color: #3366ff;">print</span>(z)      # the all three variables x, y &amp; z will print Mango</p>
+<p> </p>
+
+          <p><strong>Unpack a Collection of variables</strong><br />If we have a collections of values in a tuple, list etc. Python allows to extract the values into variables separately. It is called unpacking.<br />e.g.<br />Unpacking a list:<br />_Items_fruits = ["Guava", "Mango", "Orange"]<br />x, y, z = _Items_fruits<br /><span style="color: #3366ff;">print</span>(x) # x will print Guava <br /><span style="color: #3366ff;">print</span>(y) # y will print Mango<br /><span style="color: #3366ff;">print</span>(z) # z will print Orange</p>
+<p><strong>Concatenation in Python</strong><br />To combine or concatenate both text and a variable, Python uses the + character:</p>
+<p>e.g. <br />x = "excellent"<br /><span style="color: #3366ff;">print</span>("Python is " + x) # the result be "Python is excellent"<br />We can also use the + character to add a variable to another variable:<br />e.g.<br />x = "Python is "<br />y = "excellent"<br />z = x + y<br /><span style="color: #3366ff;">print</span>(z) # the result be "Python is excellent"<br />For numbers, the + character works as a mathematical operator:<br />e.g.<br />x = 20<br />y = 30<br /><span style="color: #3366ff;">print</span>(x + y) # result will be 30<br />If we try to combine a string and a number, it will give an error.<br />e.g.<br />x = 20              # here x is an integer variable<br />y = "Hello"     # here y is a string variable<br /><span style="color: #3366ff;">print</span>(x + y)   # it will give an error. Because we can't add string and integer</p>
+<p><strong>Global Variables</strong><br />The Variables are created outside of a function is  called Global variables and can be used by everyone, both inside and outside of functions.<br />e.g.<br />Create a variable outside of a function, and use it inside the function<br />x = "excellent"</p>
+<p><span style="color: #3366ff;">def</span> testfunc():<br /><span style="color: #3366ff;">print</span>("Python is " + x)<br />testfunc()    # result will be " Python is excellent " </p>
+<p>Variable inside a function, is local variable and can only be used inside the function. While the variable with the same name out side of a function is a global variable and it will remain with the original value as it was.</p>
+<p> x = "excellent"  <span style="color: #ff0000;"># global variable</span><br /><span style="color: #3366ff;">def</span> testfunc():<br />  x = "powerful"  <span style="color: #ff0000;"># local variable</span><br />  <span style="color: #3366ff;">print</span>("Python is " + x)  # result will be "Python is powerful" <br />testfunc()<br /><span style="color: #3366ff;">print</span>("Python is " + x)  #  result will be "Python is excellent"</p>
+<p><strong>The global Keyword</strong><br />To create a global variable inside a function use the <strong>global keyword</strong> to create global variable.</p>
+<p><span style="color: #3366ff;">def</span> testfunc():<br /><span style="color: #3366ff;">global</span> x<br />x = "powerful"<br />testfunc()<br /><span style="color: #3366ff;">print</span>("Python is " + x)  # result will be "Python is powerful"</p>
+<p><strong>To change the value of a global variable inside a function,</strong> refer to the variable by using the global keyword:<br />x = "excellent"<br /><span style="color: #3366ff;">def</span> testfunc():<br /><span style="color: #3366ff;">global</span> x<br />x = "powerful"<br />testfunc()</p>
+<p><span style="color: #3366ff;">print</span>("Python is " + x)  # result will be "Python is powerful"</p>
+<p> </p>
+
+  <!-- Python Variables Theory End -->
+    </div>
+ <!-- Second Column is for Google Adds -->
+<div class="col-sm-5" style="background-color:grey;">
+    <div class="container">
+        <!-- new -->
+    <h1>Google Adds Here Pasted</h1>
+    <!-- new end -->
+
+    </div>
+<!-- Second Column is End- for Google Adds -->
+</div>
+    </div>
+<br>
+</div>
+</div>
+<!-- above script are same for all pages. -->
+ <br>
+<br>
+
+
+</body>
+</html>

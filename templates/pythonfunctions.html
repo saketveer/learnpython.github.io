@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>{{title}}</title
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body style="height:3000px">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Learn Python</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+        <!-- for python menu -->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Select
+       </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'pythonintroduction' %}">Python Introduction</a>
+          <a class="dropdown-item" href="{% url 'pythongettingstarted' %}">Python Getting Started</a>
+          <a class="dropdown-item" href="{% url 'pythonsyntax' %}">Python Syntax & Comment</a>
+          <a class="dropdown-item" href="{% url 'pythonvariable' %}">Python Variables</a>
+          <a class="dropdown-item" href="{% url 'pythondatatype' %}">Python Data Types</a>
+          <a class="dropdown-item" href="{% url 'pythonnumbers' %}">Python Numbers</a>
+          <a class="dropdown-item" href="{% url 'pythoncasting' %}">Python Casting</a>
+          <a class="dropdown-item" href="{% url 'pythonoperators' %}">Python Operators</a>
+          <a class="dropdown-item" href="{% url 'pythonlists' %}">Python Lists</a>
+          <a class="dropdown-item" href="{% url 'pythontuples' %}">Python Tuples</a>
+          <a class="dropdown-item" href="{% url 'pythonsets' %}">Python Sets</a>
+          <a class="dropdown-item" href="{% url 'pythondictionary' %}">Python Dictionaries</a>
+          <a class="dropdown-item" href="{% url 'pythonarray' %}">Python Arrays</a>
+
+
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Funtion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="{% url 'pythonuserinput' %}">Python User Input</a>
+         <a class="dropdown-item" href="{% url 'pythonifelse' %}">Python If...else</a>
+         <a class="dropdown-item" href="{% url 'pythonwhileloops' %}">Python While Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonforloops' %}">Python For Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonfunctions' %}">Python Functions</a>
+         <a class="dropdown-item" href="{% url 'pythonclassobjects' %}">Python Class & Objects</a>
+        </div>
+      </li>
+
+
+        <!-- for python menu end -->
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">Signup<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- navbar area closed here -->
+<!-- columns start -->
+<p>
+    <br>
+    <br>
+    <p>&nbsp;&nbsp;
+     <!---     Amazone Add Start -->
+   <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = '420022-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+    <!-- Amazone Add End -->
+    </p>
+</p>
+<div class="container-fluid">
+   <div class="container-fluid">
+       <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row">
+      <div class="col-sm-7" style="background-color:white;">
+  <!-- Python Functions Theory Start -->
+        <p><h2><strong>Python Functions</strong></h2></p>
+          <p><strong>Function</strong><br />A function is a block of code which only runs when it is called. a function can return data or value as a result.<br />We can pass data or value, known as parameters, into a function.</p>
+<p><strong>Creating a Function</strong><br />A function is defined by using the <span style="color: #3366ff;"><strong>def keyword</strong></span> in Python.<br /><span style="color: #3366ff;">def</span> my_function():<br /><span style="color: #3366ff;">print</span>("Hello i am from a function")</p>
+<p>my_function()      <span style="color: #ff0000;"># Calling Function here</span></p>
+<p><strong>Arguments</strong><br />From a function's perspective.<br />An argument is the value that is sent to the function when it is called. If the function expects 3 arguments, we have to call the function with 3 arguments, not more, and not less. We can add as many arguments as we want, just separate them with a comma.<br />We can add as many arguments as we want, just separate them with a comma.<br /><span style="color: #ff0000;">A parameter is the variable listed inside the parentheses in the function definition.</span></p>
+<p><span style="color: #3366ff;">def</span> my_function(yrname):   <span style="color: #ff0000;"> # function with one argument.</span><br /><span style="color: #3366ff;">print</span>(" Hello " + yrname)<br />my_function("Kunal")<br />my_function("Amrita")<br />my_function("Veer")<br />e.g. ii<br /><span style="color: #3366ff;">def</span> my_function(yrname,age):     <span style="color: #ff0000;"> # function with two argument.</span><br /><span style="color: #3366ff;">print</span>(" Hello " + yrname + " Your Age " + age)<br />my_function("Kunal","25")</p>
+<p><strong><span style="color: #3366ff;">Return</span> Statement</strong><br /><span style="color: #3366ff;">def</span> cube(number):<br /><span style="color: #3366ff;">return</span> number * number * number<br /><span style="color: #3366ff;">print</span>("I am not going to print anything")<br />results = cube(4)<br /><span style="color: #3366ff;">print</span>(results)</p>
+<p><span style="color: #3366ff;">def</span> cube(number):<br />x=number * number * number<br /><span style="color: #3366ff;">return</span> x<br /><span style="color: #3366ff;">print</span>(cube(4))</p>
+<p><span style="color: #3366ff;">def</span> cube(number):<br /><span style="color: #3366ff;">return</span> number * number * number<br /><span style="color: #3366ff;">print</span>(cube(4))</p>
+<p><strong>Arbitrary Arguments, *args</strong><br />If we are unknown how many arguments will be passed into our function, add a * before the parameter name in the function definition.<br />The function will receive a tuple of arguments, and can access the items accordingly. Arbitrary Arguments are often shortened to <strong><span style="color: #3366ff;">*args</span></strong> in Python documentations.</p>
+<p><span style="color: #3366ff;">def</span> my_function(<strong>*</strong>sons):<br /><span style="color: #3366ff;">print</span>("Name of child is " + sons[3])    <span style="color: #ff0000;"># referring by index value</span><br />my_function("Ram", "Shyam", "Mohan")</p>
+<p><strong>Keyword Arguments,</strong> we can also send arguments with the<strong> key = value</strong> syntax.<br /><span style="color: #3366ff;">def</span> my_function(child1, child2, child3):<br /><span style="color: #3366ff;">print</span>("Name of child is " + child1)<br />my_function(child1="Ram", child2="Shyam", child3="Mohan")</p>
+<p>Arbitrary Keyword Arguments, <span style="color: #3366ff;"><strong>**kwargs</strong></span><br /><span style="color: #3366ff;">def</span> my_function(<strong>**</strong>son):<br /><span style="color: #3366ff;">print</span>("details are " + son["lastname"])</p>
+<p>my_function(firstname = "Amrita", midname = "Kumari", lastname="verma")</p>
+<p><strong>If we call the function without argument, it uses the default value:</strong><br /><span style="color: #3366ff;">def</span> my_function(country = "India"):<br /><span style="color: #3366ff;">print</span>("I am from " + country)</p>
+<p>my_function("Sweden")<br />my_function("Japan")<br />my_function()                       <span style="color: #ff0000;">  # without argument calling</span><br />my_function("Brazil")</p>
+<p><strong>We can send any data types of argument to a function</strong> (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.<br /><strong>E.g.</strong> if we send a List as an argument, it will still be a List when it reaches the function.<br /><span style="color: #3366ff;">def</span> my_function(food):<br /><span style="color: #3366ff;">for</span> x <span style="color: #3366ff;">in</span> food:<br /><span style="color: #3366ff;">print</span>(x)<br />fruits = ["apple", "banana", "cherry"]<br />my_function(fruits)</p>
+<p><strong>Function definitions cannot be empty,</strong> but for some reason it could be. put in the <strong><span style="color: #3366ff;">pass</span> </strong>statement to avoid getting an error.<br /><span style="color: #3366ff;">def</span> myfunction():<br /><span style="color: #3366ff;">pass</span><br />myfunction()</p>
+<p><strong>Recursion in Python</strong><br />Which means a defined function can call itself. Recursion is a common mathematical and programming concept. recursion can loop through data to reach a result.<br /><span style="color: #3366ff;">def</span> my_recursion(k):<br /><span style="color: #3366ff;">if</span>(k &gt; 0):<br />result = k + my_recursion(k - 1)<br /><span style="color: #3366ff;">print</span>(result)<br /><span style="color: #3366ff;">else:</span><br />result = 0<br /><span style="color: #3366ff;">return</span> result<br /><span style="color: #3366ff;">print</span>("\n\nRecursion Results")<br />my_recursion(10)</p>
+
+
+            <!-- Python Functions Theory End -->
+    </div>
+ <!-- Second Column is for Google Adds -->
+<div class="col-sm-5" style="background-color:grey;">
+    <div class="container">
+        <!-- new -->
+    <h1>Google Adds Here Pasted</h1>
+    <!-- new end -->
+
+    </div>
+<!-- Second Column is End- for Google Adds -->
+</div>
+    </div>
+<br>
+</div>
+</div>
+<!-- above script are same for all pages. -->
+ <br>
+<br>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>{{title}}</title
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body style="height:3000px">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Learn Python</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+        <!-- for python menu -->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Select
+       </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'pythonintroduction' %}">Python Introduction</a>
+          <a class="dropdown-item" href="{% url 'pythongettingstarted' %}">Python Getting Started</a>
+          <a class="dropdown-item" href="{% url 'pythonsyntax' %}">Python Syntax & Comment</a>
+          <a class="dropdown-item" href="{% url 'pythonvariable' %}">Python Variables</a>
+          <a class="dropdown-item" href="{% url 'pythondatatype' %}">Python Data Types</a>
+          <a class="dropdown-item" href="{% url 'pythonnumbers' %}">Python Numbers</a>
+          <a class="dropdown-item" href="{% url 'pythoncasting' %}">Python Casting</a>
+          <a class="dropdown-item" href="{% url 'pythonoperators' %}">Python Operators</a>
+          <a class="dropdown-item" href="{% url 'pythonlists' %}">Python Lists</a>
+          <a class="dropdown-item" href="{% url 'pythontuples' %}">Python Tuples</a>
+          <a class="dropdown-item" href="{% url 'pythonsets' %}">Python Sets</a>
+          <a class="dropdown-item" href="{% url 'pythondictionary' %}">Python Dictionaries</a>
+          <a class="dropdown-item" href="{% url 'pythonarray' %}">Python Arrays</a>
+
+
+        </div>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Funtion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="{% url 'pythonuserinput' %}">Python User Input</a>
+         <a class="dropdown-item" href="{% url 'pythonifelse' %}">Python If...else</a>
+         <a class="dropdown-item" href="{% url 'pythonwhileloops' %}">Python While Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonforloops' %}">Python For Loops</a>
+         <a class="dropdown-item" href="{% url 'pythonfunctions' %}">Python Functions</a>
+         <a class="dropdown-item" href="{% url 'pythonclassobjects' %}">Python Class & Objects</a>
+        </div>
+      </li>
+
+
+        <!-- for python menu end -->
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'signup' %}">Signup<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- navbar area closed here -->
+<!-- columns start -->
+<p>
+    <br>
+    <br>
+    <p>&nbsp;&nbsp;
+     <!---     Amazone Add Start -->
+   <script type="text/javascript" language="javascript">
+      var aax_size='728x90';
+      var aax_pubname = '420022-21';
+      var aax_src='302';
+    </script>
+    <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+    <!-- Amazone Add End -->
+    </p>
+</p>
+<div class="container-fluid">
+   <div class="container-fluid">
+       <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row">
+      <div class="col-sm-7" style="background-color:white;">
+  <!-- Python Numbers Theory Start -->
+         <p><h2><strong>Python-Numbers</strong></h2></p>
+        <p><strong>There are three numeric data types in Python:</strong><br /><span style="color: #000000;">1. int</span><br /><span style="color: #000000;">2. float</span><br /><span style="color: #000000;">3. complex</span></p>
+<p>Variables of <strong>numeric, float and complex</strong> types are created when we assign a value to them:</p>
+<p><span style="color: #000000;">x = 1 # int</span><br /><span style="color: #000000;">y = 2.8 # float</span><br /><span style="color: #000000;">z = 1j # complex</span></p>
+<p>To verify the type of any object in Python, we can use the<strong> <span style="color: #3366ff;">type</span>()</strong> function:</p>
+<p><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(x))<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(y))<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(z))</p>
+<p><strong>Int, or integer</strong>, is a whole number, positive or negative, without decimals, of unlimited length.</p>
+<p><span style="color: #000000;">x = 1</span><br /><span style="color: #000000;">y = 25656222554887711</span><br /><span style="color: #000000;">z = -3255522</span></p>
+<p><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(x))<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(y))<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(z))</p>
+<p><strong>Float, or "floating</strong> point number" is a number, positive or negative, containing one or more decimals.</p>
+<p><span style="color: #000000;">x = 2.10</span><br /><span style="color: #000000;">y = 2.0</span><br /><span style="color: #000000;">z = -65.59</span></p>
+<p><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(x))<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(y))<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(z))</p>
+<p>Float can also be scientific numbers with an<strong> "e"</strong> to indicate the power of 10.</p>
+<p><span style="color: #000000;">x = 45e3</span><br /><span style="color: #000000;">y = 12E5</span><br /><span style="color: #000000;">z = -86.7e100</span></p>
+<p><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(x))<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(y))<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(z))</p>
+          <p><strong>Complex</strong> numbers are written with a <strong>"j"</strong> as the imaginary part:</p>
+<p><span style="color: #000000;">x = 2+3j</span><br /><span style="color: #000000;">y = 2j</span><br /><span style="color: #000000;">z = -2j</span></p>
+<p><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(x))<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(y))<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(z))</p>
+<p><strong>Type Conversion</strong><br />We can convert from one type to another with the int(), float(), and complex() methods:</p>
+<p><strong># Convert from one type to another:</strong><br />x = 1 # x is int type.<br />y = 1j # y is complex type.<br />z = 3.5 # z is float type.</p>
+<p><strong># convert from int to float:</strong><br />a = float(x)</p>
+<p><strong># convert from float to int:</strong><br />b = int(z)</p>
+<p><strong># convert from int to complex:</strong><br />c = complex(x)</p>
+<p><span style="color: #3366ff;">print</span>(a)<br /><span style="color: #3366ff;">print</span>(b)<br /><span style="color: #3366ff;">print</span>(c)</p>
+<p><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(a))<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(b))<br /><span style="color: #3366ff;">print</span>(<span style="color: #3366ff;">type</span>(c))</p>
+<p><span style="color: #ff0000;"><strong># We cannot convert complex numbers into another number type.</strong></span></p>
+<p><strong>Random Number</strong><br />Python does not have a random() function to make a random number, but Python has a built-in module called random that can be used to make random numbers:</p>
+<p><strong>Import the random module, and display a random number between 1 and 20:</strong></p>
+<p><span style="color: #3366ff;">import</span> random<br /><span style="color: #3366ff;">print</span>(random.randrange(1, 21))</p>
+<p><strong> String</strong><br />In Python, Strings are arrays of bytes representing Unicode characters. A string is a collection of one or more characters put in a single quote, double-quote or triple quote. There is no character data type in python, a character is a string of length one. It is represented by str class.</p>
+<p> </p>
+
+  <!-- Python  Numbers Theory End -->
+    </div>
+ <!-- Second Column is for Google Adds -->
+<div class="col-sm-5" style="background-color:grey;">
+    <div class="container">
+        <!-- new -->
+    <h1>Google Adds Here Pasted</h1>
+    <!-- new end -->
+
+    </div>
+<!-- Second Column is End- for Google Adds -->
+</div>
+    </div>
+<br>
+</div>
+</div>
+<!-- above script are same for all pages. -->
+ <br>
+<br>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
