@@ -1,1 +1,1 @@
-# learnpython.github.io/home.html
+# learnpython.github.io
